@@ -1,6 +1,7 @@
 import Image from "next/image";
 import NavBar from "./ui/Navbar/page";
-import Hero from "../app/component/Hero.jsx";
+import Hero from "../components/ui/Hero.jsx";
+import Projects from "@/components/ui/Projects";
 // import Blog from "./Components/Blog.jsx";
 // import About from "./Components/About.jsx";
 // import "./App.css";
@@ -15,14 +16,14 @@ export default function Home() {
 
     <div
     id="app"
-    className="flex flex-col items-center bg-zinc-400 border-2 border-sky-500 w-full"
+    className="flex flex-col items-center  text-white w-full"
     >
       {/* fix nav */}
    
       <Hero />
-      {/* 
       <Projects />
-      <Tech /> */}
+      
+      {/* <Tech /> */}
     
       {/* <Project />
       <Blog />

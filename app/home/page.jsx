@@ -1,4 +1,4 @@
-import Hero from "../component/Hero"
+import Hero from "../../components/ui/Hero"
 
 const page = () => {
   return (
