@@ -7,7 +7,7 @@ import Project from "./project";
 
 export default function () {
   return (
-    <div className="w-[40%] border-2 p-4">
+    <div className="w-[40%] border-2 p-4 min-w-fit">
       <h1 className="text-xl font-bold ">heading</h1>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni odio
@@ -15,7 +15,7 @@ export default function () {
         exercitationem assumenda?
       </p>
 
-      <div className="flex gap-2">
+      <div className="flex gap-2 flex-wr ">
         <Button asChild className="mt-5">
           <div>
             <ImGithub />
