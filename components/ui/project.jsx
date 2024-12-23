@@ -7,7 +7,7 @@ import Project from "./project";
 
 export default function () {
   return (
-    <div className="w-[40%] border-2 p-4  air:min-w-fit air:bg-red-600  min-w-min  ">
+    <div className="w-[45%] border-2 p-4  air:min-w-fit air:bg-red-600  min-w-min  px-6">
       <h1 className="text-xl font-bold ">heading</h1>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni odio

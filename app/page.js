@@ -2,6 +2,8 @@ import Image from "next/image";
 import NavBar from "./ui/Navbar/page";
 import Hero from "../components/ui/Hero.jsx";
 import Projects from "@/components/ui/Projects";
+import Tech from "@/components/ui/Tech/Tech";
+import Blogs from "@/components/ui/Blogs/Blogs";
 // import Blog from "./Components/Blog.jsx";
 // import About from "./Components/About.jsx";
 // import "./App.css";
@@ -22,11 +24,9 @@ export default function Home() {
    
       <Hero />
       <Projects />
-      
-      {/* <Tech /> */}
-    
-      {/* <Project />
-      <Blog />
+      <Tech />
+      <Blogs />
+      {/* 
       <About /> */}
     </div>
 
