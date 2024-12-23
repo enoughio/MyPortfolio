@@ -16,7 +16,7 @@ export default function Home() {
 
     <div
     id="app"
-    className="flex flex-col items-center  text-white w-full"
+    className="flex flex-col items-center text-white w-full"
     >
       {/* fix nav */}
    

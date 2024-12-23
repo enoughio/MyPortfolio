@@ -9,6 +9,9 @@ export default {
   darkMode: 'class', // Enables dark mode using the "class" strategy
   theme: {
     extend: {
+      screens: {
+        'air': {'max': '1260px'},   // Custom max-width for small devices
+      },
       colors: {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
