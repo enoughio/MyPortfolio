@@ -1,7 +1,7 @@
 
 const Tech = () => {
     return (
-      <div>Tech</div>
+      <div className="border-2 w-full h-screen">Tech</div>
     )
   }
   
