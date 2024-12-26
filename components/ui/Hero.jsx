@@ -9,9 +9,9 @@ const Hero = () => {
   return (
     <div
       id="Hero"
-      className=" flex justify-center h-[90%] pt-[2vh] mt-8 "
+      className=" flex justify-center h-[90%] pt-[3vh] mt-8  "
     >
-      <div id="textContent" className="w-[90%] mx-4 md:mx-0 h-[100%] pt-[2rem] md:text-left ">
+      <div id="textContent" className="w-[100%]  h-[100%] pt-[2rem] md:text-left ">
 
       <div className="my-2">
         <h1 className="text-4xl md:text-7xl lg:text-[8vw] font-[1000] pb-1  ">
@@ -34,7 +34,7 @@ const Hero = () => {
         </p>
       </div>
 
-        <div className="w-1/2 h-1 bg rounded-full mt-10"></div>
+        <div className="w-1/2 h-[1px] my-16 bg-white rounded-full mt-10"></div>
         
         <div
           id="lower"
