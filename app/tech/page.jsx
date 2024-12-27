@@ -3,7 +3,7 @@ import Tech from "@/components/ui/Tech/Tech"
 
 const page = () => {
   return (
-    <div>
+    <div >
         <Tech />
     </div>
   )
