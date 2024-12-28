@@ -5,6 +5,7 @@ import TechStack from "@/components/ui/Tech/Tech";
 import Timeline from "@/components/ui/Timeline";
 import { BlogTimeline } from "@/components/ui/blogslider.jsx";
 import { data } from "@/utils/placeholder.js";
+import Contact from "@/components/ui/Contact.jsx";
 
 
 
@@ -23,7 +24,7 @@ export default function Home() {
       {/* <TechStackGrid /> */}
       <Timeline  />
       <Blogs />
-
+      <Contact />
       {/* <BlogTimeline data={data} /> */}
       {/* 
       <About /> */}

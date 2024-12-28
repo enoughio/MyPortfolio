@@ -1,8 +1,11 @@
+import Blog from "@/components/ui/Blogs/Blog"
 
 
 const page = () => {
   return (
-    <div>page</div>
+    <div>
+      <Blog />
+    </div>
   )
 }
 

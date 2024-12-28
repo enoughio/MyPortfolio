@@ -3,6 +3,7 @@ import "./globals.css";
 import { FloatingNav } from "@/components/ui/Tech/NavBar";
 import Project from "@/components/ui/project";
 import Hero from "@/components/ui/Hero";
+import NavBar from "./ui/Navbar/page";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -45,7 +46,8 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth flex flex-col items-start text-white bg-[#010101] w-full px-2 sm:px-8 lg:px-[19%]`}
       >
-        <FloatingNav navItems={navItems} />
+        <NavBar ></NavBar>
+        {/* <FloatingNav navItems={navItems} /> */}
         {children}
       </body>
     </html>
