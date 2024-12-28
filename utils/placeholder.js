@@ -145,3 +145,23 @@ export const data = [
     },
   ];
   
+
+  
+export const techStack = {
+  webDevelopment: [
+    { name: "HTML", icon: "/icons/html.svg" },
+    { name: "CSS", icon: "/icons/css.svg" },
+    { name: "JavaScript", icon: "/icons/javascript.svg" },
+    { name: "TypeScript", icon: "/icons/typescript.svg", wide: true },
+    { name: "React", icon: "/icons/react.svg" },
+    { name: "Next.js", icon: "/icons/nextjs.svg" },
+    { name: "Tanstack Query", icon: "/icons/tanstackquery.svg", wide: true },
+    { name: "Zod", icon: "/icons/zod.svg" },
+    { name: "Astro", icon: "/icons/astro.svg" },
+    { name: "Tailwind CSS", icon: "/icons/tailwindcss.svg" },
+    { name: "Ant Design", icon: "/icons/antdesign.svg", wide: true },
+    { name: "Bootstrap", icon: "/icons/bootstrap.svg" },
+    { name: "Material UI", icon: "/icons/schadcn.svg" },
+    { name: "Vite", icon: "/icons/vite.svg" },
+  ],
+};
