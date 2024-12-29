@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ImGithub } from "react-icons/im";
-
 import Link from "next/link";
 
 
-export default function () {
+
+function Blog () {
   return (
     <div className="w-full border-2 p-4  air:min-w-fit air:bg-red-600  min-w-min  px-6">
       <h1 className="text-xl font-bold ">heading</h1>
@@ -37,3 +37,7 @@ export default function () {
     </div>
   );
 }
+
+
+
+export default Blog;

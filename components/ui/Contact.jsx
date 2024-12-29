@@ -4,10 +4,10 @@ import Link from 'next/link'
 export default function Contact() {
   return (
     // <main className="min-h-screen w-full bg-black-to-br from-zinc-100 to-zinc-200 p-6">
-      <div className="max-w-screen w-full">
+      <div className="w-full  m-10">
         {/* <h1 className="text-zinc-500 text-2xl mb-6">contact</h1> */}
         
-        <div className="bg-black backdrop-blur-sm rounded-3xl p-12 relative overflow-hidden">
+        <div className=" backdrop-blur-sm rounded-3xl p-12 relative overflow-hidden">
           <div className="relative z-10">
             <h2 className="text-6xl font-bold mb-16">Let's<br />Connect!</h2>
             
@@ -33,7 +33,7 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Github className="w-8 h-8" />
+                    {/* <Github className="w-8 h-8" /> */}
                     <span className="sr-only">GitHub Profile</span>
                   </Link>
                   <Link 
@@ -42,7 +42,7 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Twitter className="w-8 h-8" />
+                    {/* <Twitter className="w-8 h-8" /> */}
                     <span className="sr-only">Twitter Profile</span>
                   </Link>
                   <Link 
@@ -51,7 +51,7 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Instagram className="w-8 h-8" />
+                    {/* <Instagram className="w-8 h-8" /> */}
                     <span className="sr-only">Instagram Profile</span>
                   </Link>
                   <Link 
@@ -60,7 +60,7 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Linkedin className="w-8 h-8" />
+                    {/* <Linkedin className="w-8 h-8" /> */}
                     <span className="sr-only">LinkedIn Profile</span>
                   </Link>
                 </div>
