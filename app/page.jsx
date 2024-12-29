@@ -1,5 +1,5 @@
 import Hero from "../components/ui/Hero.jsx";
-import Projects from "@/components/ui/Projects";
+import Projects from "@/components/project/Projects.jsx";
 import TechStack from "@/components/ui/Tech/Tech";
 import Timeline from "@/components/ui/Timeline";
 import { BlogTimeline } from "@/components/ui/Blogs/Blogslider.jsx";
@@ -18,8 +18,10 @@ export default function Home() {
       {/* fix nav */}
    
       <Hero />
+      {/* <div className="bg-white w-full h-[1px] my-10" /> */}
       <Projects />
       <TechStack />
+      {/* doen  */}
       {/* <TechStackGrid /> */}
       <Timeline  />
       <Highlight />

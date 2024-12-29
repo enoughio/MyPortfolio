@@ -1,7 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { FloatingNav } from "@/components/ui/Tech/NavBar";
-import Project from "@/components/ui/project";
+import Project from "@/components/project/project";
 import Hero from "@/components/ui/Hero";
 import NavBar from "./ui/Navbar/page";
 

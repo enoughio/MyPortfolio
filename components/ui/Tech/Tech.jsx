@@ -8,22 +8,21 @@ const TechStack = () => {
 
   return (
 
-    <div className="w-full  text-white p-8">
-      <h1 className="text-4xl font-bold mb-8">Skills</h1>
+    <div className="w-full lg:pr-20  text-white my-32">
+      <h1 className="text-6xl font-bold  mb-1 self-start">Skills</h1>
       
       <div className="space-y-12">
         <section>
-          <h2 className="text-2xl font-semibold mb-6 text-[#8CC84B]">Web Development</h2>
+          <h2 className="text-2xl font-semibold my-6 text-[#8CC84B]">Web Development</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {techStack.webDevelopment.map((tech, index) => (
               <div
               // { ...console.log(tech.icon) }
                 key={tech.name}
 
-
                 className={`
-                  flex flex-col items-center justify-center p-6
-                    border border-gray-800
+                  flex flex-col items-center justify-center p-6  rounded-md
+                    border-2 border-gray-800
                   transition-transform hover:scale-105
                   ${tech.wide ? 'col-span-2' : 'col-span-1'}
                 `}
@@ -41,9 +40,9 @@ const TechStack = () => {
           </div>
         </section>
 
-        <section>
+        {/* <section>
           <h2 className="text-2xl font-semibold mb-6 text-[#8CC84B]">App Development</h2>
-          {/* App Development section - to be populated similarly */}
+          // App Development section - to be populated similarly
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {techStack.webDevelopment.map((tech, index) => (
               <div
@@ -72,6 +71,7 @@ const TechStack = () => {
 
 
         </section>
+         */}
       </div>
     </div>
   )

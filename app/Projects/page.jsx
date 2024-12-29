@@ -1,7 +1,7 @@
 import Projects from "@/components/ui/Projects"
 
 
-const projects = () => {
+const page = () => {
   return (
     <div>
       <Projects />
@@ -9,4 +9,4 @@ const projects = () => {
   )
 }
 
-export default projects
+export default page
