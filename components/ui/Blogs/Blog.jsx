@@ -1,38 +1,21 @@
-import { Button } from "@/components/ui/button";
-import { ImGithub } from "react-icons/im";
-import Link from "next/link";
+import {Topic} from "@/components/ui/Blogs/Topic";
 
 
 
 function Blog () {
   return (
-    <div className="w-full border-2 p-4  air:min-w-fit air:bg-red-600  min-w-min  px-6">
+    <div className=" border-2 p-1 md:p-3 w-full overflow-hidden air:bg-red-600">
       <h1 className="text-xl font-bold ">heading</h1>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni odio
-        consectetur id debitis perspiciatis. Unde atque ducimus temporibus
-        exercitationem assumenda?
+      <p className="text-sm">
+
       </p>
 
-      <div className="flex gap-2 ">
-        <Button asChild className=" mt-3 md:mt-5">
-          <div>
-            <ImGithub />
-            <Link href="/contact">view source</Link>
-          </div>
-        </Button>
-        <Button asChild className=" mt-3 md:mt-5">
-          <div>
-            <ImGithub />
-            <Link href="/contact"> source</Link>
-          </div>
-        </Button>
-        <Button asChild className=" mt-3 md:mt-5">
-          <div>
-            <ImGithub />
-            <Link href="/contact">view</Link>
-          </div>
-        </Button>
+      <div className="flex gap-1 md:gap-2 flex-wrap  md:flex-nowrap md:flex-row justify-start items-center my-5">
+      <Topic topic="Frontend Development" variant="secondary" size="sm" />
+      <Topic topic="Backend Development" variant="secondary" size="sm" />
+      <Topic topic="Fullstack Development" variant="secondary" size="sm" />
+
+     
       </div>
     </div>
   );
