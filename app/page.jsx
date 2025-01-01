@@ -4,7 +4,7 @@ import TechStack from "@/components/ui/Tech/Tech.jsx";
 // import { BlogTimeline } from "@/components/ui/Blogs/Blogslider.jsx";
 import Contact from "@/components/ui/Contact.jsx";
 import Highlight from "@/components/ui/Blogs/Highlight.jsx";
-import Timeline from "@/components/ui/Timeline.jsx";
+// import Timeline from "@/components/ui/Timeline.jsx";
 
 
 
@@ -23,7 +23,7 @@ export default function Home() {
       <TechStack />
       {/* doen  */}
       {/* <TechStackGrid /> */}
-      <Timeline  />
+      {/* <Timeline  /> */}
       <Highlight />
       {/* <Blogs /> */}
 
