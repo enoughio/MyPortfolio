@@ -1,10 +1,10 @@
 import Hero from "../components/ui/Hero.jsx";
 import Projects from "@/components/project/Projects.jsx";
-import TechStack from "@/components/ui/Tech/Tech";
-import Timeline from "@/components/ui/Timeline";
-import { BlogTimeline } from "@/components/ui/Blogs/Blogslider.jsx";
+import TechStack from "@/components/ui/Tech/Tech.jsx";
+// import { BlogTimeline } from "@/components/ui/Blogs/Blogslider.jsx";
 import Contact from "@/components/ui/Contact.jsx";
 import Highlight from "@/components/ui/Blogs/Highlight.jsx";
+import Timeline from "@/components/ui/Timeline.jsx";
 
 
 
