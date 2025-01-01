@@ -3,7 +3,7 @@ import "./globals.css";
 import { FloatingNav } from "@/components/ui/Tech/NavBar";
 import Project from "@/components/project/project";
 import Hero from "@/components/ui/Hero";
-import NavBar from "./ui/Navbar/page";
+import NavBar from "../components/Navbar/page";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
