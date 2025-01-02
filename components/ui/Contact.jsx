@@ -1,14 +1,13 @@
 import { Mail, ArrowUpRight, Download, Eye, Github, Twitter, Instagram, Linkedin } from 'lucide-react'
 import Link from 'next/link'
+import { Card } from './card'
 
 export default function Contact() {
   return (
-    // <main className="min-h-screen w-full bg-black-to-br from-zinc-100 to-zinc-200 p-6">
-      <div className="w-full  m-10">
-        {/* <h1 className="text-zinc-500 text-2xl mb-6">contact</h1> */}
-        
+  
+
         <div className=" backdrop-blur-sm rounded-3xl p-12 relative overflow-hidden">
-          <div className="relative z-10">
+    
             <h2 className="text-6xl font-bold mb-16">Let's<br />Connect!</h2>
             
             <div className="space-y-8">
@@ -84,13 +83,16 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Large circle with arrow */}
-          <div className="absolute top-8 right-8 w-64 h-64 border-2 border-black rounded-full flex items-center justify-center">
-            <ArrowUpRight className="w-8 h-8 absolute top-4 right-4" />
-          </div>
-        </div>
-      </div>
-    // </main>
   )
 }
 
+
+export const NewContact = ()  => {
+
+  <Card>
+      
+
+  </Card>
+
+
+}

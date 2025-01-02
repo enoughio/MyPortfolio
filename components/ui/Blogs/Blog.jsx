@@ -22,3 +22,41 @@ function Blog () {
 
 
 export default Blog;
+
+
+
+
+
+import * as React from "react"
+
+import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+
+
+
+export function Bloger() {
+  return (
+    <Card className="w-full">
+      <CardHeader>
+        <CardTitle className="w-full text-2xl" >Create project</CardTitle>
+        <CardDescription className="w-full text-md " >Deploy your new project in one-click Vercel provides tools and infrastructure to deploy apps and features at scale. Deploy Now. Vercel provides tools and infrastructure to deploy apps and features at scale. Deploy Now.</CardDescription>
+      </CardHeader>
+
+      <CardFooter className=" mt-0 pt-0 flex justify-start gap-2">
+      <Badge variant="custom">web dev</Badge>
+      <Badge variant="custom">Badge</Badge>
+      <Badge variant="custom">Badge</Badge>
+      <Badge variant="custom">Badge</Badge>
+
+      </CardFooter>
+    </Card>
+  )
+}

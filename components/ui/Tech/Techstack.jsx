@@ -13,6 +13,7 @@ export default  function TechStack() {
       
       <div className="space-y-12">
         <section>
+          
           <h2 className="text-2xl font-semibold my-6 text-[#8CC84B]">Web Development</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {tech.webDevelopment.map((tech, index) => (
@@ -76,3 +77,8 @@ export default  function TechStack() {
     </div>
   )
 }
+
+
+
+
+  
