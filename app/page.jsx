@@ -1,10 +1,12 @@
 import Hero from "../components/ui/Hero.jsx";
-import Projects from "@/components/project/Projects.jsx";
-import TechStack from "@/components/ui/Tech/Tech.jsx";
+// import Projects from "@/components/project/Projects.jsx";
 // import { BlogTimeline } from "@/components/ui/Blogs/Blogslider.jsx";
 import Contact from "@/components/ui/Contact.jsx";
 import Highlight from "@/components/ui/Blogs/Highlight.jsx";
-// import Timeline from "@/components/ui/Timeline.jsx";
+import { TProjects } from "@/components/project/Tprojects.jsx";
+import TechStack from "@/components/ui/Tech/Techstack.jsx";
+import { Projects } from "@/components/project/Projects.jsx";
+import Timeline from "@/components/ui/Timeline.jsx";
 
 
 
@@ -13,17 +15,14 @@ export default function Home() {
 
     <div
     id="app"
-    className="flex flex-col items-center text-white w-full"
+    className="flex dark flex-col md:items-start text-white w-full"
     >
       {/* fix nav */}
    
       <Hero />
-      {/* <div className="bg-white w-full h-[1px] my-10" /> */}
       <Projects />
       <TechStack />
-      {/* doen  */}
-      {/* <TechStackGrid /> */}
-      {/* <Timeline  /> */}
+      <Timeline  />
       <Highlight />
       {/* <Blogs /> */}
 

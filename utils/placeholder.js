@@ -147,7 +147,7 @@ export const data = [
   
 
   
-export const techStack = {
+export const tech = {
   webDevelopment: [
     { name: "HTML", icon: "/icons/html.svg" },
     { name: "CSS", icon: "/icons/css.svg" },

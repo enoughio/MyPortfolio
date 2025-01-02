@@ -4,6 +4,7 @@ import { FloatingNav } from "@/components/ui/Tech/NavBar";
 import Project from "@/components/project/project";
 import Hero from "@/components/ui/Hero";
 import NavBar from "../components/Navbar/page";
+import { ThemeProvider } from "@/context/ThemeContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -48,7 +49,9 @@ export default function RootLayout({ children }) {
       >
         <NavBar ></NavBar>
         {/* <FloatingNav navItems={navItems} /> */}
+        {/* <ThemeProvider> */}
         {children}
+        {/* </ThemeProvider> */}
       </body>
     </html>
   );

@@ -1,4 +1,4 @@
-import Tech from "@/components/ui/Tech/Tech"
+import Tech from "@/components/ui/Tech/Techstack"
 
 
 const page = () => {

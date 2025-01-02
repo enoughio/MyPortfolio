@@ -1,37 +1,66 @@
-// "use client"
-
 import { Button } from "@/components/ui/button";
 import Project from "../project/project";
+import Link from "next/link";
+import { cn } from "@/lib/utils";
+import { ExternalLink } from "lucide-react";
+
+import { Card, CardContent } from "@/components/ui/card.jsx";
+
 import { ProjectsData } from "@/utils/Data";
-// import { useState } from "react";
-
-const Projects = () => {
-
-  // const [visibleProjects, setVisibleProjects] = useState(4);
-  // const LoadMore = () => {
-  //   setVisibleProjects(prev => prev+4);
-  // }
-  
 
 
-  return (
-    <div className="flex flex-col justify-center items-center  md:pt-8 w-full mt-[13%] gap-10">
-      <h1 className="text-6xl font-bold  mb-1 self-start">My Project</h1>
-      <div className="flex items-start w-full flex-wrap justify-start  flex-col  md:flex-row gap-8">
-        {/* <Project /> */}
-        {
-          ProjectsData.slice(0, 4).map((item, index)=>{
-              return <Project key={item.id}  data={item} />
-          })
-        }
-      </div>
+const techColors = {
+    "React": "bg-blue-500",
+    "React Native": "bg-green-500",
+    "Vue.js": "bg-purple-500",
+    "Python": "bg-yellow-500",
+}
 
-       {/* {
-          visibleProjects < ProjectsData.length && <Button className="w-fit mt-5" onClick={LoadMore}>Load More</Button>
-        } */}
-      
-    </div>
-  );
-};
-
-export default Projects;
+export const Projects = () => {
+    return (
+        <div className="mt-10">
+            <h2 className="text-4xl font-bold mb-4">
+                Featured Projects
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-1">
+                {ProjectsData.slice(0, 5).map((p, i) => (
+                    <Card key={i} className="rounded-md" >
+                        <CardContent className="pt-6 h-full">
+                            <div className="flex flex-col h-full">
+                                <Link
+                                    href={p.link}
+                                    className="font-semibold text-primary hover:underline"
+                                >
+                                    {p.title}
+                                </Link>
+                                <p className="text-sm text-foreground mt-1 mb-4">
+                                    {p.description}
+                                </p>
+                                <div className="mt-auto flex items-center justify-between">
+                                    <div className="flex items-center space-x-2">
+                                        <div
+                                            className={cn(
+                                                "size-4 rounded-full",
+                                                techColors[p.tech]
+                                            )}
+                                        />
+                                        <span className="text-xs font-medium text-foreground">
+                                            {p.tech}
+                                        </span>
+                                    </div>
+                                    <Link
+                                        href={p.link}
+                                        className="flex items-center gap-2 text-sm text-primary hover:underline"
+                                    >
+                                        View Project
+                                        <ExternalLink className="inline-block size-3" />
+                                    </Link>
+                                </div>
+                            </div>
+                        </CardContent>
+                    </Card>
+                ))}
+            </div>
+        </div>
+    )
+}

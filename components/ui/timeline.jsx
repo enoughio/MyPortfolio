@@ -1,4 +1,3 @@
-
 import React from "react";
 
 import { expreienceData } from "@/utils/Data";
@@ -7,8 +6,8 @@ const Timeline = () => {
 
  
     return (
-        <div className=" max-w-4xl self-start ">
-            <h1 className=" text-6xl font-bold mb-16 text-center ">My Experience</h1>
+        <div className=" max-w-4xl mt-20 self-start ">
+            <h1 className="text-4xl font-bold mb-16  text-start ">My Experience</h1>
             <div className="ml-5 relative border-l  border-white-400">
                 {expreienceData.map((Experience, index) => (
                     <div key={index} className="mb-8">
