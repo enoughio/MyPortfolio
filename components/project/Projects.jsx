@@ -1,6 +1,6 @@
 // "use client"
 
-import { Button } from "@/components/ui/button";
+
 import Project from "../project/project";
 import { ProjectsData } from "@/utils/Data";
 // import { useState } from "react";
@@ -17,7 +17,8 @@ const Projects = () => {
   return (
     <div className="flex flex-col justify-center items-center  md:pt-8 w-full mt-[13%] gap-10">
       <h1 className="text-6xl font-bold  mb-1 self-start">My Project</h1>
-      <div className="flex items-start w-full flex-wrap justify-start  flex-col  md:flex-row gap-8">
+      {/* <div className="flex items-start w-full flex-wrap justify-between  flex-col  md:flex-row gap-2"> */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4" >
         {/* <Project /> */}
         {
           ProjectsData.slice(0, 4).map((item, index)=>{

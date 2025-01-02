@@ -1,28 +1,7 @@
 export const ProjectsData = [
+   
     {
       id: 1,
-      Heading: 'Multi-User Chat App',
-      Description: 'A real-time chat application based on WebSockets, built using React, Node.js, Express, and MongoDB.',
-      isOnGithub: true,
-      SourceCode: 'https://github.com/example1',
-      isLive: true,
-      LiveLink: 'http://example1.com',
-      isDetailed: true,
-      Details: {
-        TechStack: ['React', 'Node.js', 'Express', 'MongoDB', 'WebSocket'],
-        Features: [
-          'Real-time messaging',
-          'User authentication and chat rooms',
-          'Responsive design for mobile and desktop',
-        ],
-        Challenges: [
-          'Handling multiple concurrent users efficiently',
-          'Implementing WebSocket communication securely',
-        ],
-      },
-    },
-    {
-      id: 2,
       Heading: 'Portfolio Website',
       Description: 'A personal portfolio website showcasing projects and blogs, built with HTML, CSS, and JavaScript.',
       isOnGithub: true,
@@ -40,6 +19,29 @@ export const ProjectsData = [
         Challenges: ['Optimizing animations for performance on older devices'],
       },
     },
+  {
+    id: 2,
+    Heading: 'Multi-User Chat App',
+    Description: 'A real-time chat application based on WebSockets, built using React, Node.js, Express, and MongoDB.',
+    isOnGithub: true,
+    SourceCode: 'https://github.com/example1',
+    isLive: true,
+    LiveLink: 'http://example1.com',
+    isDetailed: true,
+    Details: {
+      TechStack: ['React', 'Node.js', 'Express', 'MongoDB', 'WebSocket'],
+      Features: [
+        'Real-time messaging',
+        'User authentication and chat rooms',
+        'Responsive design for mobile and desktop',
+      ],
+      Challenges: [
+        'Handling multiple concurrent users efficiently',
+        'Implementing WebSocket communication securely',
+      ],
+    },
+  },
+  
     {
       id: 3,
       Heading: 'E-Commerce Store',
