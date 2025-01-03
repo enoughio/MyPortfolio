@@ -1,4 +1,4 @@
-import Projects from "@/components/project/Projects"
+import Projects from "@/components/project/Projects.jsx"
 
 
 const page = () => {

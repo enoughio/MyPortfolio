@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button";
-import Project from "../project/project";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { ExternalLink } from "lucide-react";
@@ -16,7 +14,7 @@ const techColors = {
     "Python": "bg-yellow-500",
 }
 
-export const Projects = () => {
+const Projects = () => {
     return (
         <div className="mt-10">
             <h2 className="text-4xl font-bold mb-4">
@@ -64,3 +62,6 @@ export const Projects = () => {
         </div>
     )
 }
+
+
+export default  Projects;

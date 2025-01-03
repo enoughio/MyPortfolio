@@ -1,9 +1,9 @@
-import Contact from "@/components/ui/Contact"
+import { NewContact } from "@/components/ui/Contact"
 
 const page = () => {
   return (
     <div>
-      <Contact />
+      <NewContact />
     </div>
   )
 }
