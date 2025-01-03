@@ -1,10 +1,13 @@
-
+import Projects from "@/components/project/Projects";
+import Hero from "@/components/ui/Hero";
 import TechStack from "@/components/ui/Tech/Techstack";
 import Timeline from "@/components/ui/timeline.jsx"; // Corrected import path
 
 const Page = () => {
   return (
     <div>
+      {/* <Hero /> */}
+      <Projects />
       <TechStack />
       <Timeline /> {/* Add the Timeline component if needed */}
     </div>
