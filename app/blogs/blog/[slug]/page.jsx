@@ -76,7 +76,7 @@ import { Suspense } from 'react'
 import NotionContent from '@/components/NotionContent.jsx'
 
 export default async function BlogDetailPage({ params }) {
-  const { slug } = params
+  const { slug } = await params
 
   // Fetch post by slug
   const post = await fetchBySlug(slug)

@@ -1,5 +1,3 @@
-'use client'
-
 import { tech } from "@/utils/placeholder.js";
 
 export default function TechStack() {

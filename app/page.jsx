@@ -1,4 +1,5 @@
-import TechStack from "@/components/ui/Tech/Techstack.js";
+
+import TechStack from "@/components/ui/Tech/Techstack";
 import Timeline from "@/components/ui/timeline.jsx"; // Corrected import path
 
 const Page = () => {
