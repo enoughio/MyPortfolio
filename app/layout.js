@@ -1,10 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { FloatingNav } from "@/components/ui/Tech/NavBar";
-import Project from "@/components/project/project";
-import Hero from "@/components/ui/Hero";
-import NavBar from "../components/Navbar/page";
-import { ThemeProvider } from "@/context/ThemeContext";
+import Navbar from "@/components/ui/Navbar";
+
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,12 +22,12 @@ export const metadata = {
 const navItems = [
   {
     name: "Home",
-    link: <Hero />,
+    link: '/',
     // icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
   },
   {
     name: "projects",
-    link: <Project />,
+    link: '/projects',
     // icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
   },
   {
@@ -48,10 +46,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth flex flex-col items-start text-white bg-[#010101] w-full px-2 sm:px-8 lg:px-[19%]`}
       >
         <NavBar ></NavBar>
-        {/* <FloatingNav navItems={navItems} /> */}
-        {/* <ThemeProvider> */}
         {children}
-        {/* </ThemeProvider> */}
       </body>
     </html>
   );
