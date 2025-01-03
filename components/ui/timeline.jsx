@@ -1,5 +1,4 @@
 import React from "react";
-
 import { expreienceData } from "@/utils/Data.js";
 
 const Timeline = () => {
