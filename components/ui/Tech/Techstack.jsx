@@ -7,12 +7,12 @@ export default function TechStack() {
       <div className="space-y-12">
         <section>
           <h2 className="text-2xl font-semibold my-6 text-[#8CC84B]">Web Development</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+          <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-4">
             {tech.webDevelopment.map((tech, index) => (
               <div
                 key={tech.name}
                 className={`
-                  flex flex-col items-center justify-center p-6 rounded-md
+                  flex flex-col items-center  h-20 sm:h-auto bg-card justify-center p-6 rounded-md
                   border-2 border-gray-800 transition-transform hover:scale-105
                   ${tech.wide ? 'col-span-2' : 'col-span-1'}
                 `}

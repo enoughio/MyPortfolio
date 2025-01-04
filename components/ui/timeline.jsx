@@ -5,7 +5,7 @@ const Timeline = () => {
 
  
     return (
-        <div className=" max-w-4xl mt-20 self-start ">
+        <div className="  mt-20 self-start bg-card w-full rounded-3xl p-10 ">
             <h1 className="text-4xl font-bold mb-16  text-start ">My Experience</h1>
             <div className="ml-5 relative border-l  border-white-400">
                 {expreienceData.map((Experience, index) => (
@@ -19,7 +19,7 @@ const Timeline = () => {
                                 <div
                                     className="sm:ml-4 text-text text-2xl font-semibold">{Experience.title}</div>
                             </div>
-                            <p className="text-gray-300 mt-1">{Experience.description}</p>
+                            <p className="font-xl text-zinc-700 mt-1">{Experience.description}</p>
                         </div>
                     </div>
                 ))}

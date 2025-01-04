@@ -39,24 +39,31 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
+import Link from "next/link";
 
 
 
 export function Bloger() {
   return (
-    <Card className="w-full">
+    <Card className="w-full bg-[hsla(341, 0%, 30%, 1)] border bg-card ">
+      <Link href='#' >
       <CardHeader>
-        <CardTitle className="w-full text-2xl" >Create project</CardTitle>
-        <CardDescription className="w-full text-md " >Deploy your new project in one-click Vercel provides tools and infrastructure to deploy apps and features at scale. Deploy Now. Vercel provides tools and infrastructure to deploy apps and features at scale. Deploy Now.</CardDescription>
+        <CardTitle className="w-full text-2xl text-primary" >Create Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, dignissimos?</CardTitle>
+        <CardDescription className="w-full text-md text-primary-foreground" >Deploy your new project in one-click Vercel provides tools and infrastructure to deploy apps and features at scale. Deploy Now. Vercel provides tools and infrastructure to deploy apps and features at scale. Deploy Now.</CardDescription>
       </CardHeader>
 
-      <CardFooter className=" mt-0 pt-0 flex justify-start gap-2">
-      <Badge variant="custom">web dev</Badge>
-      <Badge variant="custom">Badge</Badge>
-      <Badge variant="custom">Badge</Badge>
-      <Badge variant="custom">Badge</Badge>
+      <CardFooter className=" mt-0 pt-0 flex justify-between gap-2 ">
+        <div>
 
+      <Badge variant="custom" className="border-[1px]" >web dev</Badge>
+      <Badge variant="custom">Badge</Badge>
+      <Badge variant="custom">Badge</Badge>
+      <Badge variant="custom">Badge</Badge>
+        </div>
+
+       <Button className="px-10 mr-16 text-md">Read post</Button>
       </CardFooter>
+      </Link>
     </Card>
   )
 }

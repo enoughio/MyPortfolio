@@ -9,15 +9,15 @@ const Hero = () => {
   return (
     <div
       id="Hero"
-      className=" flex justify-center h-[90%] pt-[3vh] mt-8 md:mb-10  "
+      className=" flex justify-center h-[90%] pt-[3vh] mt-8  bg-card p-10 rounded-3xl "
     >
       <div id="textContent" className="w-[100%]  h-[100%] pt-[2rem] md:text-left ">
 
       <div className="my-2">
-        <h1 className="text-4xl md:text-7xl lg:text-[8vw] text-zinc-300 font-[1000] pb-1  ">
+        <h1 className="text-4xl md:text-7xl lg:text-[8vw] text-zinc-200 font-[1000] pb-1  ">
           Hii,
         </h1>
-        <h1 className="text-6xl text-nowrap md:text-7xl lg:text-[9vw]  text-zinc-200 font-[1000] ">
+        <h1 className="text-6xl text-nowrap md:text-7xl lg:text-[9vw]  text-zinc-100 font-[1000] ">
           I'm Aniket
         </h1>
       </div>
@@ -27,7 +27,7 @@ const Hero = () => {
         <h3 className="text-4xl leading-9 md:text-4xl md:text-nowrap lg:text-[4vw] font-[1000]  pb-3">
           Web Developer and Designer
         </h3>
-        <p className="text-1xl md:text-2xl text-zinc-400 font-normal my-4">
+        <p className="text-1xl md:text-2xl text-zinc-50 font-normal my-4">
           I am a full stack web developer I like to code (and occasionally
           design). Based Lorem, ipsum dolor sit amet consectetur adipisicing
           elit. Dicta, quam. in India.

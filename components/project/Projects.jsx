@@ -20,9 +20,9 @@ const Projects = () => {
             <h2 className="text-4xl font-bold mb-4">
                 Featured Projects
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-1">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-1 ">
                 {ProjectsData.slice(0, 5).map((p, i) => (
-                    <Card key={i} className="rounded-md" >
+                    <Card key={i} className="rounded-md border" >
                         <CardContent className="pt-6 h-full">
                             <div className="flex flex-col h-full">
                                 <Link
@@ -48,7 +48,7 @@ const Projects = () => {
                                     </div>
                                     <Link
                                         href={p.link}
-                                        className="flex items-center gap-2 text-sm text-primary hover:underline"
+                                        className="flex items-center gap-2 text-sm text-white hover:underline"
                                     >
                                         View Project
                                         <ExternalLink className="inline-block size-3" />

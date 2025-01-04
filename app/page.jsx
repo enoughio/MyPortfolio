@@ -27,6 +27,7 @@ import { NewContact } from "@/components/ui/Contact.jsx";
 import Highlight from "@/components/ui/Blogs/Highlight.jsx";
 import TechStack from "@/components/ui/Tech/Techstack.jsx";
 import Projects from "@/components/project/Projects.jsx";
+import Timeline from "@/components/ui/Timeline.jsx";
 
 
 export default function Home() {
@@ -34,13 +35,14 @@ export default function Home() {
 
     <div
     id="app"
-    className="flex dark flex-col md:items-start text-white w-full"
+    className="flex  flex-col md:items-start text-white w-full"
     >
  
       <Hero />
       <Projects />
       <TechStack />
       <Highlight />
+      <Timeline />
       <NewContact />
     </div>
 
