@@ -3,6 +3,7 @@ import { NewContact } from "@/components/ui/Contact";
 import Highlight from "@/components/ui/Blogs/Highlight";
 import TechStack from "@/components/ui/Tech/Techstack";
 import Projects from "@/components/project/Projects";
+import AboutPage from "@/components/ui/About";
 // import Timeline from "@/components/ui/Timeline";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <TechStack />
       <Highlight />
       {/* <Timeline /> */}
+      <AboutPage />
       <NewContact />
 
       

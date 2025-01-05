@@ -1,41 +1,26 @@
 "use client"
+
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
+import { Card } from './card'
+import { NewContact } from './Contact'
+import Projects from '../project/Projects'
 
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-black text-white">
-      <div className="w-full pr-96 px-6 py-12">
+    // <main className="min-h-screen bg-black text-white">
+    //   <div className="w-full pr-96 px-6 py-12">
     
-
+      <Card className="mt-12 p-8">
         <div className="relative">
-          {/* Decorative curved line */}
-          <div className="absolute -right-12 top-24 w-[400px] h-[400px] pointer-events-none select-none">
-            <svg
-              width="100%"
-              height="100%"
-              viewBox="0 0 400 400"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="text-zinc-800/50"
-            >
-              <path
-                d="M200 100C200 100 300 100 350 200"
-                stroke="currentColor"
-                strokeWidth="1"
-              />
-            </svg>
-          </div>
-
-          <article className="space-y-16">
-            <div className="space-y-8">
-              <h2 className="text-6xl font-bold leading-tight">
+          <article className="text-primary">
+              <h2 className="text-6xl font-bold  leading-tight">
                 Hii Again,<br />
                 I'm Aniket.
               </h2>
 
-              <div className="space-y-6 text-xl text-zinc-300">
+              <div className="space-y-6 text-xl my-10 text-zinc-300">
                 <p>
                   I'm a product designer living in Brooklyn, interested in how people and software 
                   can work together to make life better. I'm currently at Snap, where I design 
@@ -62,27 +47,20 @@ export default function AboutPage() {
                   (no, she wasn't named after me).
                 </p>
               </div>
-            </div>
 
-            <div className="flex gap-4">
-              <Button
-                asChild
-                variant="secondary"
-                className="rounded-full bg-white text-black hover:bg-zinc-200"
-              >
-                <Link href="/demo-1">Live Demo</Link>
-              </Button>
-              <Button
-                asChild
-                variant="secondary"
-                className="rounded-full bg-white text-black hover:bg-zinc-200"
-              >
-                <Link href="/demo-2">Live Demo</Link>
-              </Button>
-            </div>
+            <div className="flex items-center justify gap-4">
+            <Button asChild>
+              <Link href={<NewContact /> }> Project</Link>
+            </Button>
+            <Button asChild>
+              <Link href={<Projects /> }>Contact</Link>
+            </Button>
+          </div>
+
           </article>
         </div>
-      </div>
-    </main>
+        </Card>
+    //   </div>
+    // </main>
   )
 }
