@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <div
       id="Hero"
-      className=" flex  justify-center h-[90%] pt-[3vh] mt-8  bg-card p-4 md:p-10 rounded-3xl "
+      className=" flex  justify-center h-[90%] pt-[3vh] mt-8  bg-card p-10 md:p-6 rounded-3xl"
     >
       <div
         id="textContent"
@@ -45,10 +45,10 @@ const Hero = () => {
         >
           <div className="flex items-center justify gap-4">
             <Button asChild>
-              <Link href="/projects">Project</Link>
+              <Link href="#projects">Projects</Link>
             </Button>
             <Button asChild>
-              <Link href="/contact">Contact</Link>
+              <Link href="#contact">Contact</Link>
             </Button>
           </div>
 
@@ -62,7 +62,7 @@ const Hero = () => {
             <ImGithub className="w-7 h-7" />
             <LuTwitter className="w-7 h-7" />
           </div>
-            <Resume  className="absolute hidden sm:flex right-9"  />
+            <Resume  className="absolute hidden sm:flex right-9 bottom-2"  />
 
         </div>
       </div>

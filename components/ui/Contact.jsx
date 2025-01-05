@@ -8,11 +8,12 @@ import { LuTwitter } from "react-icons/lu";
 import { AiTwotoneFileMarkdown } from "react-icons/ai";
 export const NewContact = () => {
   return (
-    <Card className="mt-10 p-10 w-full relative">
+    <Card className="mt-10 p-2 sm:p-10 w-full h-auto pb-10 relative">
       <div className="space-y-1">
         <div className="flex justify-between items-center">
-          <div className="text-8xl text-primary font-bold md:w-[400px]">
-            Lets Connect
+          <div className="text-7xl sm:text-8xl text-primary font-bold md:w-[400px]">
+            Lets <br/>
+            Connect
           </div>
           <div className="w-72 h-72 top-5 right-10 rounded-full border-2 hidden sm:flex "></div>
         </div>
@@ -26,7 +27,7 @@ export const NewContact = () => {
           <h1 className="text-xl md:text-4xl">Email</h1>
         </div>
 
-        <div className="text-primary py-5 font-bold text-4xl sm:text-3xl md:text-6xl ">
+        <div className="text-primary py-5 font-bold  text-[35px] sm:text-3xl md:text-6xl ">
           aniketjatav.dev@gmail.com
         </div>
 

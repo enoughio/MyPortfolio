@@ -93,6 +93,14 @@ export const ProjectsData = [
   ];
   
 
+  export const navItems = [
+    { name: "About", link: "#about" },
+    { name: "Projects", link: "#projects" },
+    { name: "Contact", link: "#contact" },
+    { name: "Blogs", link: "/blogs" },
+  ];
+  
+
 
  export const expreienceData = [
     { date: "January 2024", title: "Project Kickoff", description: "Initial planning and kickoff meeting." },
