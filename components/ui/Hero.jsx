@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <div
       id="Hero"
-      className=" flex justify-center h-[90%] pt-[3vh] mt-8  bg-card p-10 rounded-3xl "
+      className=" flex justify-center h-[90%] pt-[3vh] mt-8  bg-card p-4 rounded-3xl "
     >
       <div id="textContent" className="w-[100%]  h-[100%] pt-[2rem] md:text-left ">
 
@@ -38,7 +38,7 @@ const Hero = () => {
         
         <div
           id="lower"
-          className="mx-2 flex flex-col sm:flex-row  sm:items-center gap-7 sm:gap-10 sm:mt-7 "
+          className="md:mx-2 flex flex-row  sm:items-center gap-7 sm:gap-10 sm:mt-7 "
         >
           <div className="flex items-center justify gap-4">
             <Button asChild>

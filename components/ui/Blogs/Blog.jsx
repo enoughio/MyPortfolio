@@ -48,20 +48,21 @@ export function Bloger() {
     <Card className="w-full bg-[hsla(341, 0%, 30%, 1)] border bg-card ">
       <Link href='#' >
       <CardHeader>
-        <CardTitle className="w-full text-2xl text-primary" >Create Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, dignissimos?</CardTitle>
-        <CardDescription className="w-full text-md text-primary-foreground" >Deploy your new project in one-click Vercel provides tools and infrastructure to deploy apps and features at scale. Deploy Now. Vercel provides tools and infrastructure to deploy apps and features at scale. Deploy Now.</CardDescription>
+        <CardTitle className="w-full text-2xl text-primary mb-2" >Create Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, dignissimos?</CardTitle>
+        <CardDescription className="hidden md:flex w-full text-md text-primary-foreground" >Deploy your new project in one-click Vercel provides tools and infrastructure to deploy apps and features at scale. Deploy Now. Vercel provides tools and infrastructure to deploy apps and features at scale. Deploy Now.</CardDescription>
+        <CardDescription className="flex md:hidden w-full text-md text-primary-foreground" >Deploy your new project in one-click Vercel provides tools and infrastructure to deploy apps and features at </CardDescription>
       </CardHeader>
 
-      <CardFooter className=" mt-0 pt-0 flex justify-between gap-2 ">
-        <div>
+      <CardFooter className=" mt-0 pt-0 flex justify-between gap-2  ">
+        <div className="text-primary">
 
-      <Badge variant="custom" className="border-[1px]" >web dev</Badge>
-      <Badge variant="custom">Badge</Badge>
-      <Badge variant="custom">Badge</Badge>
-      <Badge variant="custom">Badge</Badge>
+      <Badge variant="custom" >#web dev</Badge>
+      <Badge variant="custom">#Badge</Badge>
+      <Badge variant="custom">#Badge</Badge>
+      <Badge variant="custom">#Badge</Badge>
         </div>
 
-       <Button className="px-10 mr-16 text-md">Read post</Button>
+       <Button  className="px-10 mr-16  text-black text-md">Read post</Button>
       </CardFooter>
       </Link>
     </Card>
