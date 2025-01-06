@@ -45,10 +45,10 @@ export const NewContact = () => {
             <a href="https://www.linkedin.com/in/aniket-jatav-abb2a6285/">
               <FaLinkedin className=" w-10 h-10 md:w-14   md:h-14" />
             </a>
-            <a href="https://www.linkedin.com/in/aniket-jatav-abb2a6285/">
+            <a href="https://github.com/enoughio">
               <ImGithub className=" w-10 h-10 md:w-14  md:h-14" />
             </a>
-            <a href="https://www.linkedin.com/in/aniket-jatav-abb2a6285/">
+            <a href="https://x.com/_aniketjatav">
               <LuTwitter className=" w-10 h-10 md:w-14 md:h-14" />
             </a>
           </div>

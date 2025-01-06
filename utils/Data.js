@@ -1,95 +1,43 @@
 export const ProjectsData = [
    
+  
+  {
+    title: 'Recipe Sharing Platform',
+    description: 'A platform for sharing and discovering recipes, built with Django and PostgreSQL',
+    tech: 'Django TypeScript',
+    link: 'https://github.com/enoughio/Physics-Calculator',
+},
+{
+  title: 'Chat Application',
+  description: 'A real-time chat application with WebSocket support, built with React and Node.js',
+  tech: 'React',
+  link: '#',
+},
     {
         title: 'E-commerce Platform',
         description: 'A full-stack e-commerce solution with React, Node.js, and MongoDB',
         tech: 'React',
-        link: '#',
+        link: 'https://github.com/enoughio/e-com-store',
     },
     {
-        title: 'Task Management App',
-        description: 'A productivity app built with React Native and Firebase',
-        tech: 'React Native',
-        link: '#',
+      title: 'Portfolio Website',
+      description: 'A personal portfolio showcasing projects and blogs, built with NEXT.JS',
+      tech: 'NEXTJS',
+      link: 'https://github.com/enoughio/MyPortfolio',
+  },
+    {
+        title: 'Todo App',
+        description: 'A productivity app built with React  and postgreSQL',
+        tech: 'React Node',
+        link: 'https://github.com/enoughio/todo',
     },
     {
-        title: 'Data Visualization Dashboard',
+        title: 'Binary tree visulizer',
         description: 'An interactive dashboard using D3.js and Vue.js',
-        tech: 'Vue.js',
-        link: '#',
+        tech: 'HTML CSS JS',
+        link: 'https://github.com/enoughio/Binary-Tree',
     },
-    {
-        title: 'AI Chatbot',
-        description: 'A machine learning-powered chatbot using Python and TensorFlow',
-        tech: 'Python',
-        link: '#',
-    },
-    {
-        title: 'Portfolio Website',
-        description: 'A personal portfolio showcasing projects and blogs, built with HTML, CSS, and JavaScript',
-        tech: 'HTML',
-        link: '#',
-    },
-    {
-        title: 'Weather App',
-        description: 'A real-time weather forecasting app using OpenWeather API and React',
-        tech: 'React',
-        link: '#',
-    },
-    {
-        title: 'Fitness Tracker',
-        description: 'A mobile-friendly app to track fitness goals and workouts, built with React Native',
-        tech: 'React Native',
-        link: '#',
-    },
-    {
-        title: 'Expense Tracker',
-        description: 'An expense tracking web app with charts and insights, built using Angular and Firebase',
-        tech: 'Angular',
-        link: '#',
-    },
-    {
-        title: 'Recipe Sharing Platform',
-        description: 'A platform for sharing and discovering recipes, built with Django and PostgreSQL',
-        tech: 'Django',
-        link: '#',
-    },
-    {
-        title: 'Language Learning App',
-        description: 'A language learning app with flashcards and quizzes, built using Flutter',
-        tech: 'Flutter',
-        link: '#',
-    },
-    {
-        title: 'Travel Planner App',
-        description: 'An app for planning trips and organizing itineraries, built with Vue.js and Firebase',
-        tech: 'Vue.js',
-        link: '#',
-    },
-    {
-        title: 'Stock Market Dashboard',
-        description: 'A stock market tracking dashboard with real-time updates, built using React and Chart.js',
-        tech: 'React',
-        link: '#',
-    },
-    {
-        title: 'Blogging Platform',
-        description: 'A blogging platform with markdown support and user authentication, built with MERN stack',
-        tech: 'MERN',
-        link: '#',
-    },
-    {
-        title: 'Chat Application',
-        description: 'A real-time chat application with WebSocket support, built with React and Node.js',
-        tech: 'React',
-        link: '#',
-    },
-    {
-        title: 'Game of Life',
-        description: 'An implementation of Conway\'s Game of Life using pure JavaScript',
-        tech: 'JavaScript',
-        link: '#',
-    },
+  
   ];
   
 

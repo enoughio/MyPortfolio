@@ -12,7 +12,7 @@ const  Resume = ({ className, ...props }) => {
       )}
       {...props}
     >
-      <a href="#" aria-label="Download Resume" className="flex items-center font-bold text-2xl">
+      <a href="https://docs.google.com/document/d/e/2PACX-1vR0MQbU4xC85G10oaiLHHNtw1VGDcCvaaRPP9W3mXptFhYE1SJ9a0absTfjo4sw5g/pub" aria-label="Download Resume" className="flex items-center font-bold text-2xl">
         Resume
         <AiTwotoneFileMarkdown size={30} className="ml-2" />
       </a>

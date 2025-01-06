@@ -32,8 +32,7 @@ const Hero = () => {
           </h3>
           <p className="text-1xl md:text-2xl text-zinc-50 font-normal my-4">
             I am a full stack web developer I like to code (and occasionally
-            design). Based Lorem, ipsum dolor sit amet consectetur adipisicing
-            elit. Dicta, quam. in India.
+            design). Based in India, I like to build thing that helps people.
           </p>
         </div>
 
@@ -59,10 +58,15 @@ const Hero = () => {
             <a href="https://www.linkedin.com/in/aniket-jatav-abb2a6285/">
               <FaLinkedin className="w-7 h-7" />
             </a>
+            <a href="https://github.com/enoughio">
             <ImGithub className="w-7 h-7" />
+            </a>
+            <a href="https://x.com/_aniketjatav">
             <LuTwitter className="w-7 h-7" />
+            </a>
           </div>
             <Resume  className="absolute hidden sm:flex right-9 bottom-2"  />
+          
 
         </div>
       </div>
