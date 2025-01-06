@@ -17,7 +17,7 @@ export default function Home() {
       <div id="hero" className="w-full"><Hero /></div>
       <div id="projects" className="w-full"><Projects /></div>
       <div id="techstack" className="w-full"><TechStack /></div>
-      <div id="highlight" className="w-full"><Highlight /></div>
+      {/* <div id="highlight" className="w-full"><Highlight /></div> */}
       <div id="about" className="w-full"><AboutPage /></div>
       <div id="contact" className="w-full"><NewContact /></div>
 
