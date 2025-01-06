@@ -27,32 +27,26 @@ export default function AboutPage() {
 
             <div className="space-y-6 text-xl my-10 text-primary">
               <p>
-                I'm a product designer living in Brooklyn, interested in how
+              I'm a web developer living in Bhopal, interested in how 
                 people and software can work together to make life better. I'm
-                currently at Snap, where I design experiences around finding and
-                using AR Lenses on Snapchat.
+                a freelancer working with a small team, where I design and develop experiences around business on the web.
               </p>
 
               <p>
-                I previously worked at ZipRecruiter, I started on the marketing
-                design side, honing my visual design skills and learning the ins
-                and outs of keyframe animation, then moved into the world of
-                product.
+              I previously worked as a individual we develope, At that thimme I have also learned a lite bit about design.
               </p>
 
               <p>
-                As a designer, I enjoy being a generalist with a focus on craft
+                As a Developer, I enjoy being a generalist with a focus on craft
                 and prototyping. I value beautiful visuals backed by smart systems
                 thinking. I love the concept that a digital product is a living
                 thing that can adapt and evolve over time.
               </p>
 
               <p>
-                Outside of design, I love food in all capacities. I spend my time
+                Outside of web developerment, I love food in all capacities. I spend my time
                 exploring new restaurants, cooking new dishes, and talking about
-                my next meal. I think a lot about the Arizona Cardinals,
-                well-executed civil engineering, and my dog Olive (no, she wasn't
-                named after me).
+                my next meal.
               </p>
             </div>
 
