@@ -2,8 +2,8 @@ export const ProjectsData = [
    
   
   {
-    title: 'Recipe Sharing Platform',
-    description: 'A platform for sharing and discovering recipes, built with Django and PostgreSQL',
+    title: 'Physics-Calculator',
+    description: 'An AI powered calculator for solving Physics and maths related problems',
     tech: 'Django TypeScript',
     link: 'https://github.com/enoughio/Physics-Calculator',
 },
