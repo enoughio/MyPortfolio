@@ -1,11 +1,8 @@
 import Hero from "@/components/ui/Hero";
 import { NewContact } from "@/components/ui/Contact";
-import Highlight from "@/components/ui/Blogs/Highlight";
 import TechStack from "@/components/ui/Tech/Techstack";
 import Projects from "@/components/project/Projects";
 import AboutPage from "@/components/ui/About";
-import { navItems } from "@/utils/Data";
-import { FloatingNav } from "@/components/ui/floating-navbar";
 
 export default function Home() {
   return (

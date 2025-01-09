@@ -1,4 +1,4 @@
-import Blog, { Bloger } from "./Blog";
+import  Bloger  from "./Blog";
 
 const Highlight = () => {
   return (
@@ -6,10 +6,11 @@ const Highlight = () => {
       <h1 className="text-4xl font-bold self-start my-5">MY Latest blogs</h1>
       <div className="flex flex-col gap-5">
 
-{/* 
-        <Bloger />
-        <Bloger />
-        <Bloger /> */}
+      
+
+        <Blog />
+        <Blog />
+        <Blog />
 
       </div>
     </div>
