@@ -1,8 +1,16 @@
 import React from "react";
-import { expreienceData } from "@/utils/Data.js";
+// import { expreienceData } from "@/utils/Data.js";
 
 
-export default function Timeline() {
+const expreienceData = [
+    { date: "January 2024", title: "Project Kickoff", description: "Initial planning and kickoff meeting." },
+    { date: "February 2024", title: "Design Phase", description: "Finalizing designs and mockups." },
+    { date: "March 2024", title: "Development Phase", description: "Starting the development of the project." },
+    { date: "April 2024", title: "Testing Phase", description: "Testing and quality assurance." },
+    { date: "May 2024", title: "Launch", description: "Official project launch." },
+];
+
+export default function Experience() {
     return (
         <div className="mt-10 self-start bg-card w-full rounded-3xl p-10 cursor-default">
             <h1 className="text-4xl font-bold mb-16 text-start">My Experience</h1>

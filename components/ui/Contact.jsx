@@ -6,6 +6,7 @@ import { FaLinkedin } from "react-icons/fa6";
 import { ImGithub } from "react-icons/im";
 import { LuTwitter } from "react-icons/lu";
 import { AiTwotoneFileMarkdown } from "react-icons/ai";
+import Resume from "./Resume";
 export const NewContact = () => {
   return (
     <Card className="mt-10 p-2 sm:p-10 w-full h-auto pb-10 relative">
@@ -54,10 +55,7 @@ export const NewContact = () => {
           </div>
 
           <div className="absolute flex right-24  h-20 w-40 border rounded-xl items-center justify-center text-primary mt-10  space-x-4 text-sm">
-            <div className="flex font-bold text-2xl p-10">
-              resume
-              <AiTwotoneFileMarkdown  size="30"/>
-            </div>
+            <Resume />
           </div>
         </div>
       </div>

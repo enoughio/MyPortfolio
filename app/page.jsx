@@ -1,10 +1,10 @@
 import Hero from "@/components/ui/Hero";
 import { NewContact } from "@/components/ui/Contact";
-import TechStack from "@/components/ui/Tech/Techstack";
+import TechStack from "@/components/ui/Techstack";
 import Projects from "@/components/project/Projects";
 import AboutPage from "@/components/ui/About";
 import Highlight from "@/components/ui/Blogs/Highlight";
-import Timeline from "@/components/ui/Timeline";
+import Timeline from "@/components/ui/Experience";
 
 export default function Home() {
   return (
