@@ -42,9 +42,8 @@ export const ProjectsData = [
   
 
   export const navItems = [
-    { name: "About", link: "#about" },
-    { name: "Projects", link: "#projects" },
     { name: "Contact", link: "#contact" },
+    { name: "Projects", link: "#projects" },
     { name: "Blogs", link: "/blogs" },
   ];
   

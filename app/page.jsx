@@ -6,12 +6,18 @@ import AboutPage from "@/components/ui/About";
 import Highlight from "@/components/ui/Blogs/Highlight";
 import Timeline from "@/components/ui/Experience";
 
+
+
 export default function Home() {
   return (
+
+    
     <div
       id="app"
       className="flex flex-col md:items-start text-primary mb-5 w-full"
     >
+      
+
       {/* <FloatingNav navItems={navItems} /> */}
       <div id="hero" className="w-full"><Hero /></div>
       <div id="projects" className="w-full"><Projects /></div>

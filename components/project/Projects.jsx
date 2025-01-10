@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { ExternalLink } from "lucide-react";
+import { RxExternalLink } from "react-icons/rx";
+
+
 
 import { Card, CardContent } from "@/components/ui/card.jsx";
 
@@ -51,7 +53,7 @@ const Projects = () => {
                                         className="flex items-center gap-2 text-sm text-white hover:underline"
                                     >
                                         View Project
-                                        <ExternalLink className="inline-block size-3" />
+                                        <RxExternalLink className="inline-block size-3" />
                                     </Link>
                                 </div>
                             </div>

@@ -1,5 +1,4 @@
-import { Mail } from "lucide-react";
-
+import { MdOutlineMail } from "react-icons/md";
 import { Card } from "./card";
 import { Separator } from "./separator";
 import { FaLinkedin } from "react-icons/fa6";
@@ -24,7 +23,7 @@ export const NewContact = () => {
 
         <div className="border w-1/2"></div>
         <div className="flex items-center mt-10  text-primary justify-start gap-4">
-          <Mail className="font-bold h-5 w-5 md:h-10 md:w-10" />
+          <MdOutlineMail className="font-bold h-5 w-5 md:h-10 md:w-10" />
           <h1 className="text-xl md:text-4xl">Email</h1>
         </div>
 

@@ -2,8 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { navItems } from "@/utils/Data";
 import { FloatingNav } from "@/components/ui/floating-navbar";
-import { SkeletonTheme } from "react-loading-skeleton";
-
+import { Analytics } from "@vercel/analytics/react"
 
 
 const geistSans = Geist({
@@ -29,10 +28,10 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable}  antialiased dark  flex flex-col items-start bg-background w-full px-2 sm:px-8 lg:px-[19%]`}
       >
-        <SkeletonTheme baseColor="#ffff" highlightColor="#444">
 
-         <FloatingNav navItems={navItems} />
-        </SkeletonTheme>
+        <FloatingNav navItems={navItems} />
+
+        <Analytics />
         {children}
       </body>
     </html>
