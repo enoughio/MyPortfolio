@@ -5,8 +5,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <div style={{ scrollBehavior: "smooth" }} className="antialiased flex flex-col items-start bg-background w-full px-2 sm:px-8  mt-8">
-      {children}
+    <div style={{ scrollBehavior: "smooth" }} className="antialiased flex flex-col items-start bg-background w-full px-2 sm:px-8  mt-10">
+      <div className="w-full">
+        {children}
+      </div>
     </div>
   );
 }

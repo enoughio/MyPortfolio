@@ -1,5 +1,5 @@
 import Post from "@/components/ui/Blogs/Post";
-import { fetchBySlug, fetchPageBlocks } from "@/lib/notion"
+import { fetchBySlug, fetchPageBlocks } from "@/lib/notion";
 import bookmarkPlugin from "@notion-render/bookmark-plugin";
 import { NotionRenderer } from "@notion-render/client";
 import hljsPlugin from "@notion-render/hljs-plugin";
@@ -10,11 +10,11 @@ const notionClient = new Client({ auth: process.env.NOTION_TOKEN }); // Initiali
 export default async function Article({ params }) {
   try {
     const renderer = new NotionRenderer({
-      client: notionClient, 
+      client: notionClient,
     });
 
     const { slug } = await params;
-    const post = await fetchBySlug(slug)
+    const post = await fetchBySlug(slug);
 
     if (!post) {
       return (
@@ -25,21 +25,22 @@ export default async function Article({ params }) {
     }
 
     const content = await fetchPageBlocks(post.id);
-    
+
     renderer.use(hljsPlugin({}));
     renderer.use(bookmarkPlugin(""));
 
     const htmlContent = await renderer.render(...content);
 
-
-    console.log(post.properties.Date.created_time)
+    console.log(post.properties.Date.created_time);
 
     return (
-      <Post
-        title={post.properties.Title.title[0]?.plain_text}
-        date={post.properties.Date.created_time}
-        htmlContent={htmlContent}
-      />
+      <>
+        <Post
+          title={post.properties.Title.title[0]?.plain_text}
+          date={post.properties.Date.created_time}
+          htmlContent={htmlContent}
+        />
+      </>
     );
   } catch (error) {
     console.error("Error fetching or rendering the post:", error);

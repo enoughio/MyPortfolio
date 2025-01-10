@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { navItems } from "@/utils/Data";
 import { FloatingNav } from "@/components/ui/floating-navbar";
+import { SkeletonTheme } from "react-loading-skeleton";
 
 
 
@@ -26,9 +27,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" style={{ scrollBehavior: "smooth" }}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable}  antialiased dark flex flex-col items-start bg-background w-full px-2 sm:px-8 lg:px-[19%]`}
+        className={`${geistSans.variable} ${geistMono.variable}  antialiased dark  flex flex-col items-start bg-background w-full px-2 sm:px-8 lg:px-[19%]`}
       >
+        <SkeletonTheme baseColor="#ffff" highlightColor="#444">
+
          <FloatingNav navItems={navItems} />
+        </SkeletonTheme>
         {children}
       </body>
     </html>

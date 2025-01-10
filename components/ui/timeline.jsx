@@ -4,7 +4,7 @@ import { expreienceData } from "@/utils/Data.js";
 
 export default function Timeline() {
     return (
-        <div className="mt-20 self-start bg-card w-full rounded-3xl p-10">
+        <div className="mt-10 self-start bg-card w-full rounded-3xl p-10 cursor-default">
             <h1 className="text-4xl font-bold mb-16 text-start">My Experience</h1>
             <div className="ml-5 relative border-l border-white-400">
                 {expreienceData.map((experience, index) => (

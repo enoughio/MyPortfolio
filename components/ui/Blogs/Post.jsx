@@ -8,7 +8,7 @@ export default function Post({ title, date, htmlContent }) {
         {date}
       </p>
       <hr />
-      <div className="prose mt-10 text-primary dark:prose-headings:text-white max-w-none" dangerouslySetInnerHTML={{ __html: htmlContent }} />
+      <div className="prose mt-10  dark:prose-headings:text-white max-w-none" dangerouslySetInnerHTML={{ __html: htmlContent }} />
     </div>
   );
 }
