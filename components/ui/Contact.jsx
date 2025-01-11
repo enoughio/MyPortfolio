@@ -6,7 +6,7 @@ import { ImGithub } from "react-icons/im";
 import { LuTwitter } from "react-icons/lu";
 import { AiTwotoneFileMarkdown } from "react-icons/ai";
 import Resume from "./Resume";
-export const NewContact = () => {
+export const  NewContact = () => {
   return (
     <Card className="mt-10 p-2 sm:p-10 w-full h-auto pb-10 relative">
       <div className="space-y-1">
@@ -15,7 +15,7 @@ export const NewContact = () => {
             Lets <br/>
             Connect
           </div>
-          <div className="w-72 h-72 top-5 right-10 rounded-full border-2 hidden sm:flex "></div>
+          {/* <div className="w-72 h-72 top-5 right-10 rounded-full border-2 hidden sm:flex "></div> */}
         </div>
 
         {/* <Separator className="w-1/2" /> */}
@@ -24,10 +24,10 @@ export const NewContact = () => {
         <div className="border w-1/2"></div>
         <div className="flex items-center mt-10  text-primary justify-start gap-4">
           <MdOutlineMail className="font-bold h-5 w-5 md:h-10 md:w-10" />
-          <h1 className="text-xl md:text-4xl">Email</h1>
+          <h1 className="text-lg md:text-3xl">Email</h1>
         </div>
 
-        <div className="text-primary py-5 font-bold  text-[35px] sm:text-3xl md:text-6xl ">
+        <div className="text-primary py-5 font-bold  text-2xl md:text-4xl ">
           aniketjatav.dev@gmail.com
         </div>
 
@@ -36,26 +36,27 @@ export const NewContact = () => {
         <div className="border  w-full"></div>
         <div
           id="lower"
-          className="md:mx-2 flex flex-row   items-center gap-7 sm:gap-10 md:mt-10 "
+          className="flex flex-row items-center mt-9 justify-between w-full  sm:items-center gap-7 sm:gap-10 "
         >
-          <div
-            id="socials"
-            className=" flex h-10 mt-10 justify-center  items-center text-white gap-8 "
-          >
-            <a href="https://www.linkedin.com/in/aniket-jatav-abb2a6285/">
-              <FaLinkedin className=" w-10 h-10 md:w-14   md:h-14" />
-            </a>
-            <a href="https://github.com/enoughio">
-              <ImGithub className=" w-10 h-10 md:w-14  md:h-14" />
-            </a>
-            <a href="https://x.com/_aniketjatav">
-              <LuTwitter className=" w-10 h-10 md:w-14 md:h-14" />
-            </a>
+          <div className="flex items-center justify-center gap-4">
+
+            <div
+              id="socials"
+              className="pl-5 sm:pl-7 flex h-10 sm:flex-row sm:justify-center items-center  border-white text-white gap-3 md:gap-8 "
+            >
+              <a href="https://www.linkedin.com/in/aniket-jatav-abb2a6285/">
+                <FaLinkedin className="w-7 h-7" />
+              </a>
+              <a href="https://github.com/enoughio">
+                <ImGithub className="w-7 h-7" />
+              </a>
+              <a href="https://x.com/_aniketjatav">
+                <LuTwitter className="w-7 h-7" />
+              </a>
+            </div>
           </div>
 
-          <div className="absolute flex right-24  h-20 w-40 border rounded-xl items-center justify-center text-primary mt-10  space-x-4 text-sm">
-            <Resume />
-          </div>
+          <Resume className=" self-end w-fit h-fit md:block" />
         </div>
       </div>
 

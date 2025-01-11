@@ -1,44 +1,44 @@
-export const ProjectsData = [
-   
-  
-  {
-    title: 'Physics-Calculator',
-    description: 'An AI powered calculator for solving Physics and maths related problems',
-    tech: 'Django TypeScript',
-    link: 'https://github.com/enoughio/Physics-Calculator',
-},
-{
-  title: 'Chat Application',
-  description: 'A real-time chat application with WebSocket support, built with React and Node.js',
-  tech: 'React',
-  link: '#',
-},
+  export const ProjectsData = [
+    
+    
     {
-        title: 'E-commerce Platform',
-        description: 'A full-stack e-commerce solution with React, Node.js, and MongoDB',
-        tech: 'React',
-        link: 'https://github.com/enoughio/e-com-store',
-    },
-    {
-      title: 'Portfolio Website',
-      description: 'A personal portfolio showcasing projects and blogs, built with NEXT.JS',
-      tech: 'NEXTJS',
-      link: 'https://github.com/enoughio/MyPortfolio',
+      title: 'Physics-Calculator',
+      description: 'An AI powered calculator for solving Physics and maths related problems',
+      tech: ['Django', 'TypeScript'],
+      link: 'https://github.com/enoughio/Physics-Calculator',
   },
-    {
-        title: 'Todo App',
-        description: 'A productivity app built with React  and postgreSQL',
-        tech: 'React Node',
-        link: 'https://github.com/enoughio/todo',
+  {
+    title: 'Chat Application',
+    description: 'A real-time chat application with WebSocket support, built with React and Node.js',
+    tech: ['React'],
+    link: '#',
+  },
+      {
+          title: 'E-commerce Platform',
+          description: 'A full-stack e-commerce solution with React, Node.js, and MongoDB',
+          tech: ['React'],
+          link: 'https://github.com/enoughio/e-com-store',
+      },
+      {
+        title: 'Portfolio Website',
+        description: 'A personal portfolio showcasing projects and blogs, built with NEXT.JS',
+        tech: ['NEXTJS'],
+        link: 'https://github.com/enoughio/MyPortfolio',
     },
-    {
-        title: 'Binary tree visulizer',
-        description: 'An interactive dashboard using D3.js and Vue.js',
-        tech: 'HTML CSS JS',
-        link: 'https://github.com/enoughio/Binary-Tree',
-    },
-  
-  ];
+      {
+          title: 'Todo App',
+          description: 'A productivity app built with React  and postgreSQL',
+          tech: ["React", "Node"],
+          link: 'https://github.com/enoughio/todo',
+      },
+      {
+          title: 'Binary tree visulizer',
+          description: 'An interactive dashboard using D3.js and Vue.js',
+          tech: ['HTML', 'CSS', 'JS'],
+          link: 'https://github.com/enoughio/Binary-Tree',
+      },
+    
+    ];
   
 
   export const navItems = [

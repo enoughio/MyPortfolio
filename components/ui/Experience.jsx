@@ -3,12 +3,23 @@ import React from "react";
 
 
 const expreienceData = [
-    { date: "January 2024", title: "Project Kickoff", description: "Initial planning and kickoff meeting." },
-    { date: "February 2024", title: "Design Phase", description: "Finalizing designs and mockups." },
-    { date: "March 2024", title: "Development Phase", description: "Starting the development of the project." },
-    { date: "April 2024", title: "Testing Phase", description: "Testing and quality assurance." },
-    { date: "May 2024", title: "Launch", description: "Official project launch." },
-];
+    { 
+      date: "April - September 2024", 
+      title: "Frontend Intern at BST", 
+      description: "Designed and implemented a frontend form as part of the project." 
+    },
+    { 
+      date: "September 2024 - Present", 
+      title: "Technical Head at BST", 
+      description: "Leading a project focused on developing the company website and a franchise management portal." 
+    },
+    { 
+      date: "November 2024", 
+      title: "Tech Team Member at 8BitWarriors", 
+      description: "Organized over 5 tech events at LNCT College." 
+    },
+  ];
+  
 
 export default function Experience() {
     return (

@@ -11,10 +11,10 @@ export function Blog({
 }) {
   return (
     <Card className="rounded-md border">
-      <CardContent className="pt-6 h-full">
+      <CardContent className="pt-4 h-full">
         <Link href={`/blogs/${slug}`}>
           <div className="flex flex-col h-full">
-            <span className="font-semibold text-primary hover:underline">
+            <span className="font-semibold text-xl text-primary hover:underline">
               {title}
             </span>
             <p className="text-sm text-foreground mt-1 mb-4">
@@ -24,7 +24,7 @@ export function Blog({
               <div className="flex items-center space-x-2">
                 {/* <div className="w-4 h-4 rounded" /> */}
                 {tags.map((tag, index) => (
-                  <span key={index} className="text-xs font-bold text-foreground">
+                  <span key={index} className="text-md font-bold text-foreground">
                     {"#"+tag.name || "untitled"}
                   </span>
                 ))}
