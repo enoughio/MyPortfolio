@@ -99,10 +99,10 @@ const Projects = () => {
   return (
     <div className="mt-10">
       <h2 className="text-4xl font-bold mb-4">Featured Projects</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-1 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-1">
         {ProjectsData.slice(0, 5).map((p, i) => (
           <Card key={i} className="rounded-md border">
-            <CardContent className="pt-4 h-full">
+            <CardContent className="pt-3 h-full">
               <div className="flex flex-col h-full">
                 <Link
                   href={p.link}
@@ -110,7 +110,7 @@ const Projects = () => {
                 >
                   {p.title}
                 </Link>
-                <p className="text-sm text-foreground mt-1 mb-4">
+                <p className="text-sm text-foreground mt-1 mb-3">
                   {p.description}
                 </p>
                 <div className="mt-auto flex items-center justify-between">

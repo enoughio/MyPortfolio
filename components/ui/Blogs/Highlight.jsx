@@ -21,12 +21,12 @@
 import { fetchPages } from "@/lib/notion";
 import { Blog } from "@/components/ui/Blogs/Blog";
 export default async function Highlight() {
-  const response = await fetchPages(3); // Fetch only the 3 most recent posts
-  const posts = response.results;
+  // const response = await fetchPages(3); // Fetch only the 3 most recent posts
+  // const posts = response.results;
 
   return (
     <div className="w-full mt-10">
-      <h1 className="text-5xl font-bold text-primary  self-start my-5">My Latest Blogs</h1>
+      {/* <h1 className="text-5xl font-bold text-primary  self-start my-5">My Latest Blogs</h1>
       <div className="flex flex-col gap-5">
         {posts.map((post) => (
           <Blog
@@ -38,7 +38,7 @@ export default async function Highlight() {
             subHead={post.properties.subhead.rich_text[0]}
           />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }

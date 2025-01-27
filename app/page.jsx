@@ -10,7 +10,6 @@ import Timeline from "@/components/ui/Experience";
 
 export default function Home() {
   return (
-
     
     <div
       id="app"
