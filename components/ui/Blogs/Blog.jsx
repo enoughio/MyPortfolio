@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export function Blog({
   title = "untitled",
-  date = "",
+  date = Date(),
   tags = [{ name: "web" }],
   subHead = "",
   slug = "",

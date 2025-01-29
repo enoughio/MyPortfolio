@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @import 'prismjs/themes/prism-okaidia.css'; Or any other theme */
+@import 'prismjs/themes/prism-tomorrow.css'; /* Change theme as needed */
+
+
 @layer base { 
   :root {
     --background: 240 15% 83%;

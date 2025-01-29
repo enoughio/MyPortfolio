@@ -7,14 +7,16 @@ import { Client } from "@notionhq/client";
 
 const notionClient = new Client({ auth: process.env.NOTION_TOKEN }); // Initialize the Notion client
 
+
 export default async function Article({ params }) {
   try {
     const renderer = new NotionRenderer({
       client: notionClient,
     });
-
     const { slug } = await params;
-    const post = await fetchBySlug(slug);
+    
+    console.log(decodeURIComponent(slug));
+    const post = await fetchBySlug(decodeURIComponent(slug));
 
     if (!post) {
       return (
@@ -31,13 +33,15 @@ export default async function Article({ params }) {
 
     const htmlContent = await renderer.render(...content);
 
-    console.log(post.properties.Date.created_time);
+    // console.log(post.properties.Date.created_time);
+    const date = new Date(post.properties.Date.created_time);
+    
 
     return (
       <>
         <Post
-          title={post.properties.Title.title[0]?.plain_text}
-          date={post.properties.Date.created_time}
+          title={post.properties.Title.rich_text[0].text.content}
+          date={date.toLocaleDateString("en-GB")}
           htmlContent={htmlContent}
         />
       </>

@@ -7,7 +7,7 @@ import { FaLinkedin } from "react-icons/fa6";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { AiTwotoneFileMarkdown } from "react-icons/ai";
-// import Resume from "./Resume.jsx";
+import Resume from "./Resume.jsx";
 
 const Hero = () => {
   return (
@@ -86,7 +86,7 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* <Resume className=" self-end hidden md:block" /> */}
+          <Resume className=" self-end hidden md:block" />
         </div>
       </div>
     </div>
