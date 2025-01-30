@@ -1,8 +1,9 @@
 "use client";
 
-import { useRouter } from 'next/navigation';
+import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Card } from "./card";
+import { motion } from "framer-motion";
 
 export default function AboutPage() {
   const router = useRouter();
@@ -10,12 +11,26 @@ export default function AboutPage() {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
       router.push(`#${sectionId}`, { scroll: false });
     }
   };
 
   return (
+    <motion.div
+      initial={{ opacity: 0, y: 200 }}
+      whileInView={{
+        y: 0,
+        opacity: 1,
+        transition: {
+          duration: 0.5,
+          delay: 0.5,
+        },
+      }}
+      viewport={{
+        once: true,
+      }}
+    >
       <Card className="mt-12 p-8">
         <div className="relative">
           <article className="text-primary">
@@ -27,41 +42,42 @@ export default function AboutPage() {
 
             <div className="space-y-6 text-xl my-10 text-primary">
               <p>
-              I'm a web developer living in Bhopal, interested in how 
-                people and software can work together to make life better. I'm
-                a freelancer working with a small team, where I design and develop experiences around business on the web.
+                I'm a web developer living in Bhopal, interested in how people
+                and software can work together to make life better. I'm a
+                freelancer working with a small team, where I design and develop
+                experiences around business on the web.
               </p>
 
               <p>
-              I previously worked as a individual we develope, At that thimme I have also learned a lite bit about design.
+                I previously worked as a individual we develope, At that thimme
+                I have also learned a lite bit about design.
               </p>
 
               <p>
                 As a Developer, I enjoy being a generalist with a focus on craft
-                and prototyping. I value beautiful visuals backed by smart systems
-                thinking. I love the concept that a digital product is a living
-                thing that can adapt and evolve over time.
+                and prototyping. I value beautiful visuals backed by smart
+                systems thinking. I love the concept that a digital product is a
+                living thing that can adapt and evolve over time.
               </p>
 
               <p>
-                Outside of web developerment, I love food in all capacities. I spend my time
-                exploring new restaurants, cooking new dishes, and talking about
-                my next meal.
+                Outside of web developerment, I love food in all capacities. I
+                spend my time exploring new restaurants, cooking new dishes, and
+                talking about my next meal.
               </p>
             </div>
 
             <div className="flex items-center justify-start gap-4">
-              <Button onClick={() => scrollToSection('projects')}>
+              <Button onClick={() => scrollToSection("projects")}>
                 Projects
               </Button>
-              <Button onClick={() => scrollToSection('contact')}>
+              <Button onClick={() => scrollToSection("contact")}>
                 Contact
               </Button>
             </div>
           </article>
         </div>
       </Card>
-
+    </motion.div>
   );
 }
-

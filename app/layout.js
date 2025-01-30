@@ -3,6 +3,7 @@ import "./globals.css";
 import { navItems } from "@/utils/Data";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { Analytics } from "@vercel/analytics/react"
+import { ReactLenis } from "@/lib/lenis"
 
 
 const geistSans = Geist({
@@ -25,15 +26,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" style={{ scrollBehavior: "smooth" }}>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable}  antialiased dark  flex flex-col items-start bg-background w-full px-2 sm:px-8 lg:px-[19%]`}
-      >
-
-        <FloatingNav navItems={navItems} />
-
-        <Analytics />
-        {children}
-      </body>
+        <body
+          className={`${geistSans.variable} ${geistMono.variable}  antialiased dark  flex flex-col items-start bg-background w-full px-2 sm:px-8 lg:px-[19%]`}
+        >
+          <FloatingNav navItems={navItems} />
+          <Analytics />
+      {/* <ReactLenis > */}
+          {children}
+      {/* </ReactLenis> */}
+        </body>
     </html>
   );
 }
