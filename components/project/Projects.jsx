@@ -36,7 +36,6 @@ const Projects = () => {
     }}
     viewport={{
       once: true,
-      amount: .6,
     }}
     >
       <div className="mt-10">

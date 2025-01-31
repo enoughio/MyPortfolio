@@ -4,8 +4,11 @@ import { motion } from "framer-motion";
 import { LuTwitter } from "react-icons/lu";
 import { ImGithub } from "react-icons/im";
 import { FaLinkedin } from "react-icons/fa6";
-import { Button } from "@/components/ui/button";
+import { IoIosArrowRoundDown } from "react-icons/io";
+
 import Link from "next/link";
+
+import { Button } from "@/components/ui/button";
 import Resume from "./Resume.jsx";
 
 const Hero = () => {
@@ -48,7 +51,8 @@ const Hero = () => {
           </h3>
           <p className="text-sm md:text-xl text-zinc-300  font-normal my-2">
             I am a full stack web developer I like to code (and occasionally
-            design). Based in India, <br></br>I like to build things that help people.
+            design). Based in India, <br></br>I like to build things that help
+            people.
           </p>
         </motion.div>
 
@@ -128,6 +132,22 @@ const Hero = () => {
           <Resume className=" self-end hidden md:block" />
         </motion.div>
       </div>
+
+      <motion.div
+        className="flex justify-center items-center"
+        initial={{ y: -10 }}
+        animate={{ y: 10 }} // Moves up and down smoothly
+        transition={{ 
+          type: "spring",
+          stiffness: 100,  // Adjust stiffness for a natural bounce
+          damping: 10,     // Controls how much it slows down
+          duration: 1.5,   // Slightly longer duration for smoothness
+          repeat: Infinity,
+          repeatType: "reverse" // Smooth reverse motion
+        }}
+      >
+        <IoIosArrowRoundDown />
+      </motion.div>
     </motion.div>
   );
 };
