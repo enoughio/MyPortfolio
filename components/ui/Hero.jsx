@@ -129,25 +129,23 @@ const Hero = () => {
             </motion.div>
           </div>
 
-          <Resume className=" self-end hidden md:block" />
+          {/* <Resume className=" self-end hidden md:block" /> */}
         </motion.div>
       </div>
 
-      <motion.div
-        className="flex justify-center items-center"
-        initial={{ y: -10 }}
-        animate={{ y: 10 }} // Moves up and down smoothly
-        transition={{ 
-          type: "spring",
-          stiffness: 100,  // Adjust stiffness for a natural bounce
-          damping: 10,     // Controls how much it slows down
-          duration: 1.5,   // Slightly longer duration for smoothness
-          repeat: Infinity,
-          repeatType: "reverse" // Smooth reverse motion
-        }}
-      >
-        <IoIosArrowRoundDown />
-      </motion.div>
+
+        <motion.div className="flex justify-center items-center"
+          animate={{
+            y: [0, 10, 0],
+          }}
+          transition={{
+            duration: 1.5,
+            repeat: Infinity,
+            repeatType: "loop",
+          }}
+        >
+          <IoIosArrowRoundDown className="text-zinc-200 text-3xl" />
+        </motion.div>
     </motion.div>
   );
 };

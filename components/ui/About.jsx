@@ -42,28 +42,31 @@ export default function AboutPage() {
 
             <div className="space-y-6 text-xl my-10 text-primary">
               <p>
-                I'm a web developer living in Bhopal, interested in how people
-                and software can work together to make life better. I'm a
-                freelancer working with a small team, where I design and develop
-                experiences around business on the web.
+                I'm a web developer based in Bhopal, passionate about how people
+                and software can work together to improve lives. I work as a
+                freelancer with a small team, where I build and optimize web
+                applications for businesses.
               </p>
 
               <p>
-                I previously worked as a individual we develope, At that thimme
-                I have also learned a lite bit about design.
+                Previously, I worked as an individual developer. During that
+                time, I also gained some experience with design, which helps me
+                create more user-friendly interfaces.
               </p>
 
               <p>
-                As a Developer, I enjoy being a generalist with a focus on craft
-                and prototyping. I value beautiful visuals backed by smart
-                systems thinking. I love the concept that a digital product is a
-                living thing that can adapt and evolve over time.
+                As a developer, I enjoy being a generalist with a strong focus
+                on clean code and scalable architecture. I value well-structured
+                systems backed by efficient and maintainable solutions. I love
+                the idea that software is an evolving entity, constantly
+                improving over time.
               </p>
 
               <p>
-                Outside of web developerment, I love food in all capacities. I
-                spend my time exploring new restaurants, cooking new dishes, and
-                talking about my next meal.
+                Outside of work, I have a deep appreciation
+                for food. I enjoy exploring new restaurants, being around people
+                who experiment with new technologies, and  <i className="font-thin">writing</i> —I write a lot
+                sometimes.
               </p>
             </div>
 

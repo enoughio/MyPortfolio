@@ -31,15 +31,31 @@ const Projects = () => {
       opacity: 1,
       transition: {
         duration: 0.5,
-        delay: 0.5,
+        delay: 0.6,
       },
     }}
     viewport={{
       once: true,
+
     }}
     >
       <div className="mt-10">
-        <h2 className="text-4xl font-bold mb-4">Featured Projects</h2>
+        <motion.h2 className="text-4xl font-bold mb-4"
+           initial={{ opacity: 0, y: 20 }}
+           whileInView={{
+             scale: 1,
+             y: 0,
+             opacity: 1,
+             transition: {
+               duration: 0.8,
+               delay: 1,
+             },
+           }}
+           viewport={{
+             once: true,
+             amount: .7,
+           }}
+        >Featured Projects</motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-1">
           {ProjectsData.slice(0, 5).map((p, i) => (
             <motion.div
@@ -56,7 +72,6 @@ const Projects = () => {
               }}
               viewport={{
                 once: true,
-                amount: 0.1,
               }}
             >
               <Card className="rounded-md border">

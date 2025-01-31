@@ -38,14 +38,14 @@ export default function TechStack() {
                   ${tech.wide ? 'col-span-2' : 'col-span-1'}
                   `}
                   >
-                <div className="w-12 h-12 mb-4">
+                <div className="w-8 h-8 mb-2 ">
                   <img
                     src={tech.icon}
                     alt={`${tech.name} icon`}
                     className="w-full h-full object-contain invert"
                     />
                 </div>
-                <span className="text-sm font-medium">{tech.name}</span>
+                <span className="text-sm ">{tech.name}</span>
               </div>
             ))}
           </div>
