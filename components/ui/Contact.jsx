@@ -2,7 +2,7 @@
 
 import { MdOutlineMail } from "react-icons/md";
 import { Card } from "./card";
-import { Separator } from "./separator";
+// import { Separator } from "./separator";
 import { FaLinkedin } from "react-icons/fa6";
 import { ImGithub } from "react-icons/im";
 import { LuTwitter } from "react-icons/lu";
@@ -44,8 +44,8 @@ export const NewContact = () => {
               <h1 className="text-lg md:text-3xl">Email</h1>
             </div>
 
-            <div className="text-primary py-5 font-bold  text-2xl md:text-4xl ">
-              aniketjatav.dev@gmail.com
+            <div className="text-primary py-5 font-bold text-2xl md:text-4xl">
+              <a href="mailto:aniketjatav.dev@gmail.com">aniketjatav.dev@gmail.com</a>
             </div>
           </div>
           {/* <div className="border"></div> */}
