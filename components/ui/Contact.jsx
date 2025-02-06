@@ -59,13 +59,25 @@ export const NewContact = () => {
                 id="socials"
                 className="pl-5 sm:pl-7 flex h-10 sm:flex-row sm:justify-center items-center  border-white text-white gap-3 md:gap-8 "
               >
-                <a href="https://www.linkedin.com/in/aniket-jatav-abb2a6285/">
+                <a
+                  href="https://www.linkedin.com/in/aniket-jatav-abb2a6285/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaLinkedin className="w-7 h-7" />
                 </a>
-                <a href="https://github.com/enoughio">
+                <a
+                  href="https://github.com/enoughio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <ImGithub className="w-7 h-7" />
                 </a>
-                <a href="https://x.com/_aniketjatav">
+                <a
+                  href="https://x.com/_aniketjatav"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <LuTwitter className="w-7 h-7" />
                 </a>
               </div>

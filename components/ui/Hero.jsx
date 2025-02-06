@@ -47,12 +47,12 @@ const Hero = () => {
           transition={{ duration: 0.5, delay: 0.6 }}
         >
           <h3 className="text-2xl md:leading-9 md:text-5xl md:text-nowrap  font-[1000]  md:pb-3">
-            Web Developer and Designer
+            Web Developer 
           </h3>
           <p className="text-sm md:text-xl text-zinc-300  font-normal my-2">
-            I am a full stack web developer I like to code (and occasionally
-            design). Based in India, <br></br>I like to build things that help
-            people.
+            I’m a web developer, based in India who enjoys building functional and
+            efficient digital experiences.<br></br>I love solving problems with code (also occasionally design) and
+            continuously exploring new technologies to improve my craft.
           </p>
         </motion.div>
 
@@ -109,6 +109,8 @@ const Hero = () => {
                 href="https://www.linkedin.com/in/aniket-jatav-abb2a6285/"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaLinkedin className="w-7 h-7" />
               </motion.a>
@@ -116,6 +118,8 @@ const Hero = () => {
                 href="https://github.com/enoughio"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <ImGithub className="w-7 h-7" />
               </motion.a>
@@ -123,6 +127,8 @@ const Hero = () => {
                 href="https://x.com/_aniketjatav"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <LuTwitter className="w-7 h-7" />
               </motion.a>
@@ -133,19 +139,19 @@ const Hero = () => {
         </motion.div>
       </div>
 
-
-        <motion.div className="flex justify-center items-center"
-          animate={{
-            y: [0, 10, 0],
-          }}
-          transition={{
-            duration: 1.5,
-            repeat: Infinity,
-            repeatType: "loop",
-          }}
-        >
-          <IoIosArrowRoundDown className="text-zinc-200 text-3xl" />
-        </motion.div>
+      <motion.div
+        className="flex justify-center items-center"
+        animate={{
+          y: [0, 10, 0],
+        }}
+        transition={{
+          duration: 1.5,
+          repeat: Infinity,
+          repeatType: "loop",
+        }}
+      >
+        <IoIosArrowRoundDown className="text-zinc-200 text-3xl" />
+      </motion.div>
     </motion.div>
   );
 };
