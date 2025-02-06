@@ -51,7 +51,7 @@ const Hero = () => {
           </h3>
           <p className="text-sm md:text-xl text-zinc-300  font-normal my-2">
             I’m a web developer, based in India who enjoys building functional and
-            efficient digital experiences.<br></br>I love solving problems with code (also occasionally design) and
+            efficient digital experiences. I love solving problems with code (also occasionally design) and
             continuously exploring new technologies to improve my craft.
           </p>
         </motion.div>
