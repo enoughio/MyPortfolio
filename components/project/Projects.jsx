@@ -36,7 +36,6 @@ const Projects = () => {
     }}
     viewport={{
       once: true,
-
     }}
     >
       <div className="mt-10">
@@ -53,7 +52,6 @@ const Projects = () => {
            }}
            viewport={{
              once: true,
-             amount: .7,
            }}
         >Featured Projects</motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-1">
