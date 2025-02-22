@@ -2,7 +2,7 @@
 
 import { MdOutlineMail } from "react-icons/md";
 import { Card } from "./card";
-// import { Separator } from "./separator";
+import { Separator } from "./separator";
 import { FaLinkedin } from "react-icons/fa6";
 import { ImGithub } from "react-icons/im";
 import { LuTwitter } from "react-icons/lu";
@@ -44,8 +44,8 @@ export const NewContact = () => {
               <h1 className="text-lg md:text-3xl">Email</h1>
             </div>
 
-            <div className="text-primary py-5 font-bold text-2xl md:text-4xl">
-              <a href="mailto:aniketjatav.dev@gmail.com">aniketjatav.dev@gmail.com</a>
+            <div className="text-primary py-5 font-bold  text-2xl md:text-4xl ">
+              aniketjatav.dev@gmail.com
             </div>
           </div>
           {/* <div className="border"></div> */}
@@ -59,25 +59,13 @@ export const NewContact = () => {
                 id="socials"
                 className="pl-5 sm:pl-7 flex h-10 sm:flex-row sm:justify-center items-center  border-white text-white gap-3 md:gap-8 "
               >
-                <a
-                  href="https://www.linkedin.com/in/aniket-jatav-abb2a6285/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://www.linkedin.com/in/aniket-jatav-abb2a6285/">
                   <FaLinkedin className="w-7 h-7" />
                 </a>
-                <a
-                  href="https://github.com/enoughio"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://github.com/enoughio">
                   <ImGithub className="w-7 h-7" />
                 </a>
-                <a
-                  href="https://x.com/_aniketjatav"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://x.com/_aniketjatav">
                   <LuTwitter className="w-7 h-7" />
                 </a>
               </div>

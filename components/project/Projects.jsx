@@ -78,6 +78,8 @@ const Projects = () => {
                     <Link
                       href={p.link}
                       className="font-semibold text-primary hover:underline"
+                       target="_blank"
+                       rel="noopener noreferrer"
                     >
                       {p.title}
                     </Link>
@@ -106,6 +108,8 @@ const Projects = () => {
                       <Link
                         href={p.link}
                         className="flex items-center gap-2 text-sm text-white hover:underline"
+                         target="_blank"
+                         rel="noopener noreferrer"
                       >
                         View Project
                         <RxExternalLink className="inline-block size-3" />

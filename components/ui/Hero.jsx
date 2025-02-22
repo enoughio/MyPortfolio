@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <motion.div
       id="Hero"
-      className="flex justify-center h-[90%] md:mt-8 mt-4 md:px-10  bg-card py-4 px-2 md:p-10 min-w-fit rounded-3xl"
+      className="flex justify-center   bg-slate-600 bg-red md:mt-8 mt-4 md:pl-7  bg-card py-4 px-2 min-w-fit rounded-3xl"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
@@ -23,7 +23,7 @@ const Hero = () => {
       <div id="textContent" className="w-[100%] h-[100%] md:text-left ">
         <div className="my-2">
           <motion.h1
-            className="text-4xl md:text-6xl  text-zinc-200 font-[1000] pb-1"
+            className="text-4xl md:text-5xl text-zinc-200 font-[1000] pb-1"
             initial={{ y: -20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -35,7 +35,7 @@ const Hero = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.4, delay: 0.4 }}
           >
-            <h1 className="text-6xl text-nowrap md:text-9xl text-zinc-100 font-extrabold">
+            <h1 className="text-6xl text-nowrap md:text-8xl text-zinc-100 font-extrabold">
               I'm Aniket
             </h1>
           </motion.div>
@@ -46,10 +46,10 @@ const Hero = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <h3 className="text-2xl md:leading-9 md:text-5xl md:text-nowrap  font-[1000]  md:pb-3">
+          <h3 className="text-2xl md:leading-9 md:text-[2.5rem] md:text-nowrap  font-extrabold  md:pb-3">
             Web Developer 
           </h3>
-          <p className="text-sm md:text-xl text-zinc-300  font-normal my-2">
+          <p className="text-sm md:text-base  text-zinc-300 leading-19 font-light bg-green-200">
             I’m a web developer, based in India who enjoys building functional and
             efficient digital experiences. I love solving problems with code (also occasionally design) and
             continuously exploring new technologies to improve my craft.
