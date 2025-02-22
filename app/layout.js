@@ -25,9 +25,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" style={{ scrollBehavior: "smooth" }}>
+    <html lang="en" >
         <body
-          className={`${geistSans.variable} ${geistMono.variable}  antialiased dark  flex flex-col items-start bg-background w-full px-2 sm:px-8 lg:px-[16%]`}
+          className={`${geistSans.variable} ${geistMono.variable} scroll-smooth antialiased dark  flex flex-col items-start bg-background w-full px-2 sm:px-8 lg:px-[16%]`}
         >
           <FloatingNav navItems={navItems} />
           <Analytics />

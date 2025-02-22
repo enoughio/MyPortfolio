@@ -1,5 +1,6 @@
 import { Blog } from "@/components/ui/Blogs/Blog";
 import { fetchPages } from "@/lib/notion";
+import { Suspense } from "react";
 
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
@@ -22,25 +23,26 @@ export default async function Page() {
           and i also want to improve on it further, therefor here this is my blog...
         </div>
       </header>
-
+    <Suspense fallback={<div>Loading...</div>}>
       {posts && posts.length > 0 ? (
         posts.map((post) => {
           const date = new Date(post.properties.Date.created_time).toLocaleDateString("en-GB");
-
+          
           return (
             <Blog
-              key={post.id}
-              title={post.properties.Title.rich_text[0].text.content || ""}
+            key={post.id}
+            title={post.properties.Title.rich_text[0].text.content || ""}
               date={date}
               tags={post.properties.Tags.multi_select}
               slug={post.properties.slug.rich_text[0]?.text.content || ""}
               subHead={post.properties.subhead.rich_text[0]?.text.content || ""}
-            />
-          );
-        })
-      ) : (
-        <div>No live blogs available</div>
-      )}
+              />
+            );
+          })
+        ) : (
+          <div>No live blogs available</div>
+        )}
+    </Suspense>
     </div>
   );
 }

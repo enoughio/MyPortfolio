@@ -10,7 +10,7 @@ export default async function Highlight() {
   
   return (
     <div className="w-full mt-10">
-      <h1 className="text-5xl font-bold text-primary self-start my-5">My Latest Blogs</h1>
+      <h1 className="text-4xl font-bold text-primary self-start my-5">My Latest Blogs</h1>
       <div className="flex flex-col gap-5">
         {posts && posts.length > 0 ? (
           posts.map((post) => {

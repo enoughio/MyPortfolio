@@ -9,14 +9,14 @@ export function Blog({
   slug = "",
 }) {
   return (
-    <Card className="rounded-md border">
-      <CardContent className="pt-4 h-full">
+    <Card className="rounded-md border w-[95%] mr-auto">
+      <CardContent className="pt-3 h-full ">
         <Link href={`/blogs/${slug}`}>
           <div className="flex flex-col h-full">
             <span className="font-semibold text-xl text-primary hover:underline">
               {title}
             </span>
-            <p className="text-sm text-foreground mt-1 mb-4">
+            <p className="text-sm text-foreground mt-1 mb-3">
               {typeof subHead === "string" ? subHead : subHead?.text?.content || ""}
             </p>
             <div className="mt-auto flex items-center justify-between">

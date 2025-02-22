@@ -26,10 +26,10 @@ export const NewContact = () => {
       once: true}}
       
     >
-      <Card className="mt-10 p-2 sm:p-10 w-full h-auto  pb-10 relative">
+      <Card className="mt-10 p-2 sm:p-5 w-full h-auto  pb-10 relative px-4">
         <motion.div className="space-y-1">
           <div className="flex justify-between items-center">
-            <div className="text-7xl sm:text-8xl text-primary font-bold md:w-[400px]">
+            <div className="text-7xl sm:text-6xl text-primary font-bold md:w-[400px]">
               Lets <br />
               Connect
             </div>
@@ -41,10 +41,10 @@ export const NewContact = () => {
             <div className="border w-1/2"></div>
             <div className="flex items-center mt-10  text-primary justify-start gap-4">
               <MdOutlineMail className="font-bold h-5 w-5 md:h-10 md:w-10" />
-              <h1 className="text-lg md:text-3xl">Email</h1>
+              <h1 className="text-lg md:text-2xl">Email</h1>
             </div>
 
-            <div className="text-primary py-5 font-bold  text-2xl md:text-4xl ">
+            <div className="text-primary pb-3 font-bold  text-2xl md:text-2xl ">
               aniketjatav.dev@gmail.com
             </div>
           </div>
@@ -57,7 +57,7 @@ export const NewContact = () => {
             <div className="flex items-center justify-center gap-4">
               <div
                 id="socials"
-                className="pl-5 sm:pl-7 flex h-10 sm:flex-row sm:justify-center items-center  border-white text-white gap-3 md:gap-8 "
+                className="pl-5 sm:pl-1 flex h-10 sm:flex-row sm:justify-center items-center  border-white text-white gap-3 md:gap-8 "
               >
                 <a href="https://www.linkedin.com/in/aniket-jatav-abb2a6285/">
                   <FaLinkedin className="w-7 h-7" />

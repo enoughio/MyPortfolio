@@ -38,7 +38,7 @@ const Projects = () => {
       once: true,
     }}
     >
-      <div className="mt-10">
+      <div className="mt-10 mx-2">
         <motion.h2 className="text-4xl font-bold mb-4"
            initial={{ opacity: 0, y: 20 }}
            whileInView={{
@@ -54,7 +54,7 @@ const Projects = () => {
              once: true,
            }}
         >Featured Projects</motion.h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-1">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-1">
           {ProjectsData.slice(0, 5).map((p, i) => (
             <motion.div
               key={i}
@@ -73,7 +73,7 @@ const Projects = () => {
               }}
             >
               <Card className="rounded-md border">
-                <CardContent className="pt-3 h-full">
+                <CardContent className="pt-2 h-full">
                   <div className="flex flex-col h-full">
                     <Link
                       href={p.link}

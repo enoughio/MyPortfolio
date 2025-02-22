@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <motion.div
       id="Hero"
-      className="flex justify-center   bg-slate-600 bg-red md:mt-8 mt-4 md:pl-7  bg-card py-4 px-2 min-w-fit rounded-3xl"
+      className="flex justify-center md:mt-8 mt-4 md:pl-7  bg-card py-4 px-2 min-w-fit rounded-3xl "
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
@@ -46,10 +46,10 @@ const Hero = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <h3 className="text-2xl md:leading-9 md:text-[2.5rem] md:text-nowrap  font-extrabold  md:pb-3">
+          <h3 className="text-2xl md:leading-9 md:text-[2.5rem] md:text-nowrap  font-extrabold pb-3">
             Web Developer 
           </h3>
-          <p className="text-sm md:text-base  text-zinc-300 leading-19 font-light bg-green-200">
+          <p className="text-sm md:text-base text-zinc-300 leading-4 md:leading-6 font-normal">
             I’m a web developer, based in India who enjoys building functional and
             efficient digital experiences. I love solving problems with code (also occasionally design) and
             continuously exploring new technologies to improve my craft.

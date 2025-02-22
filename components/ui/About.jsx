@@ -24,23 +24,23 @@ export default function AboutPage() {
         opacity: 1,
         transition: {
           duration: 0.5,
-          delay: 0.5,
+          
         },
       }}
       viewport={{
         once: true,
       }}
     >
-      <Card className="mt-12 p-8">
+      <Card className="mt-8 p-8">
         <div className="relative">
           <article className="text-primary">
-            <h2 className="text-6xl font-bold leading-tight">
+            <h2 className="text-6xl font-bold leading-none mb-5">
               Hii Again,
               <br />
               I'm Aniket.
             </h2>
 
-            <div className="space-y-6 text-xl my-10 text-primary">
+            <div className="space-y-6  text-base text-primary mt-1 mb-3 md:mb-6">
               <p>
                 I'm a web developer based in Bhopal, passionate about how people
                 and software can work together to improve lives. I work as a

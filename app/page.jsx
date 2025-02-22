@@ -13,7 +13,7 @@ export default function Home() {
     
     <div
       id="app"
-      className="flex flex-col md:items-start text-primary mb-5 w-full bg-red-300"
+      className="flex flex-col md:items-start text-primary mb-5 w-full "
     >
       
       {/* <FloatingNav navItems={navItems} /> */}
