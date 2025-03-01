@@ -9,8 +9,8 @@ export const ProjectsData = [
   },
   {
     title: 'Binary tree visulizer',
-    description: 'An interactive dashboard using D3.js and Vue.js',
-    tech: ['HTML', 'CSS', 'JS'],
+    description: 'Binary Tree Visualizer is an interactive web-based tool that helps users visualize binary tree structures dynamically',
+    tech: ['HTML', 'CSS', 'JS', 'D3.js'],
     link: 'https://github.com/enoughio/Binary-Tree',
   },
   {
