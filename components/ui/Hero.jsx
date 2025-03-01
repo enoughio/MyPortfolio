@@ -47,12 +47,11 @@ const Hero = () => {
           transition={{ duration: 0.5, delay: 0.6 }}
         >
           <h3 className="text-2xl md:leading-9 md:text-[2.5rem] md:text-nowrap  font-extrabold pb-3">
-            Web Developer 
+            Web Developer and Designer
           </h3>
           <p className="text-sm md:text-base text-zinc-300 leading-4 md:leading-6 font-normal">
             I’m a web developer, based in India who enjoys building functional and
-            efficient digital experiences. I love solving problems with code (also occasionally design) and
-            continuously exploring new technologies to improve my craft.
+            efficient digital experiences (also occasionally design).
           </p>
         </motion.div>
 
