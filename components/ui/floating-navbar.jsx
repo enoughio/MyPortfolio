@@ -50,7 +50,7 @@ export const FloatingNav = ({
           duration: 0.2,
         }}
         className={cn(
-          "flex sm:w-1/3 h-20 p-2 fixed top-10 inset-x-0 mx-auto border-2 rounded-full bg-card  z-[5000] pr-2 pl-8 py-2  items-center justify-center space-x-4",
+          "flex sm:w-1/3 w-1/2  h-16 p-2 px-4 fixed top-10 inset-x-0 mx-auto border-2 rounded-full bg-card  z-[5000]  py-2  items-center justify-center space-x-2",
           className
         )}>
         {navItems.map((navItem, idx) => (

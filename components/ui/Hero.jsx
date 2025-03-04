@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <motion.div
       id="Hero"
-      className="flex justify-center md:mt-8 mt-4 md:pl-7  bg-card py-4 px-2 min-w-fit rounded-3xl "
+      className="flex justify-center md:mt-8 mt-4 md:pl-7  bg-card py-4 px-2 max-w-[97%] mx-auto rounded-3xl "
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
@@ -49,7 +49,7 @@ const Hero = () => {
           <h3 className="text-2xl md:leading-9 md:text-[2.5rem] md:text-nowrap  font-extrabold pb-3">
             Web Developer and Designer
           </h3>
-          <p className="text-sm md:text-base text-zinc-300 leading-4 md:leading-6 font-normal">
+          <p className="text-sm md:text-base text-zinc-300 leading-5 md:leading-6 font-normal max-w-[95%]">
             I’m a web developer, based in India who enjoys building functional and
             efficient digital experiences (also occasionally design).
           </p>
