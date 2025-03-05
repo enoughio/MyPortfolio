@@ -6,6 +6,7 @@ import { RxExternalLink } from "react-icons/rx";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card.jsx";
 import { ProjectsData } from "@/utils/Data";
+import { useMediaQuery } from 'react-responsive';
 
 const techColors = {
   React: "bg-blue-500",
@@ -22,55 +23,82 @@ const techColors = {
 };
 
 const Projects = () => {
-  return (
-    <motion.div
-    initial={{ opacity: 0 }}
-    whileInView={{
-      scale: 1,
-      y: 0,
+  // Use media query to detect mobile view
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+
+  // Adjust animation variants based on screen size
+  const containerVariants = {
+    initial: { opacity: 0 },
+    animate: {
       opacity: 1,
       transition: {
         duration: 0.5,
-        delay: 0.6,
+        delay: isMobile ? 2 : 0.6,
       },
-    }}
-    viewport={{
-      once: true,
-    }}
+    },
+  };
+
+  const headingVariants = {
+    initial: { opacity: 0, y: 20 },
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        delay: isMobile ? 2.4 : 3,
+      },
+    },
+  };
+
+  const cardVariants = {
+    initial: { opacity: 0, y: 200 },
+    animate: (index) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.4,
+        delay: isMobile 
+          ? (index === 0 || index === 1 ? 2.5 :  0+ (index * 0.2)) // First card appears slower
+          :  0.2 ,  // Original desktop staggering
+        staggerChildren: 0.2,
+      },
+    }),
+  };
+
+  return (
+    <motion.div
+      initial="initial"
+      whileInView="animate"
+      variants={containerVariants}
+      viewport={{
+        once: true,
+        amount: 0.1,
+      }}
     >
       <div className="mt-10 mx-2">
-        <motion.h2 className="text-4xl font-bold mb-4"
-           initial={{ opacity: 0, y: 20 }}
-           whileInView={{
-             scale: 1,
-             y: 0,
-             opacity: 1,
-             transition: {
-               duration: 0.8,
-               delay: 3,
-             },
-           }}
-           viewport={{
-             once: true,
-           }}
-        >Featured Projects</motion.h2>
+        <motion.h2 
+          className="text-4xl font-bold mb-4"
+          initial="initial"
+          whileInView="animate"
+          variants={headingVariants}
+          viewport={{
+            once: true,
+            amount: 0.1,
+          }}
+        >
+          Featured Projects
+        </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-1">
           {ProjectsData.slice(0, 5).map((p, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, y: 200 }}
-              whileInView={{
-                scale: 1,
-                y: 0,
-                opacity: 1,
-                transition: {
-                  duration: 0.4,
-                  delay: .8,
-                  staggerChildren: 0.2,
-                },
-              }}
+              custom={i}
+              initial="initial"
+              whileInView="animate"
+              variants={cardVariants}
               viewport={{
                 once: true,
+                amount: 0.4,
               }}
             >
               <Card className="rounded-md border">
@@ -79,8 +107,8 @@ const Projects = () => {
                     <Link
                       href={p.link}
                       className="font-semibold text-primary hover:underline"
-                       target="_blank"
-                       rel="noopener noreferrer"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       {p.title}
                     </Link>
@@ -109,8 +137,8 @@ const Projects = () => {
                       <Link
                         href={p.link}
                         className="flex items-center gap-2 text-sm text-white hover:underline"
-                         target="_blank"
-                         rel="noopener noreferrer"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         View Project
                         <RxExternalLink className="inline-block size-3" />

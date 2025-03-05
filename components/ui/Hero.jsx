@@ -15,12 +15,12 @@ const Hero = () => {
   return (
     <motion.div
       id="Hero"
-      className="flex justify-center items-center  md:mt-8 mt-4 md:pl-7  bg-card py-4 px-4 max-w-[97%]  mx-auto rounded-3xl  border-2"
+      className="flex justify-center items-center  md:mt-8 mt-4 md:pl-7  bg-card py-4 px-4 max-w-[97%]  mx-auto rounded-3xl "
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5,delay: 2.5 }}
     >
-      <div id="textContent" className="w-[100%] h-[100%] md:text-left borde-red-500 border-2 ">
+      <div id="textContent" className="w-[100%] h-[100%] md:text-left  ">
         <div className="my-2">
           <motion.h1
             className="text-4xl md:text-5xl text-zinc-200 font-[1000] pb-1"

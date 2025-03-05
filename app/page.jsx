@@ -1,10 +1,10 @@
-import Hero from "@/components/ui/Hero";
-import { NewContact } from "@/components/ui/Contact";
-import TechStack from "@/components/ui/Techstack";
-import Projects from "@/components/project/Projects";
-import AboutPage from "@/components/ui/About";
-import Highlight from "@/components/ui/Blogs/Highlight";
-import Timeline from "@/components/ui/Experience";
+import Hero from "@/components/ui/Hero.jsx";
+import { NewContact } from "@/components/ui/Contact.jsx";
+import TechStack from "@/components/ui/Techstack.jsx";
+import Projects from "@/components/project/Projects.jsx";
+import AboutPage from "@/components/ui/About.jsx";
+import Highlight from "@/components/ui/Blogs/Highlight.jsx";
+import Timeline from "@/components/ui/Experience.jsx";
 
 
 
