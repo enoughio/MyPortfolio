@@ -6,6 +6,31 @@
 @import 'prismjs/themes/prism-tomorrow.css'; /* Change theme as needed */
 
 
+html, body {
+  scroll-behavior: auto !important;
+  scroll-snap-type: none !important;
+}
+
+/* Force page to start at top on load/reload */
+body {
+  scroll-behavior: auto !important;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+/* Webkit browsers (Chrome, Safari) */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Scroll to top on page load */
+html {
+  scroll-padding-top: 0 !important;
+  scroll-margin-top: 0 !important;
+}
+
+
+
 
 @layer base { 
   :root {
@@ -42,3 +67,5 @@
     @apply bg-background text-foreground;
   }
 }
+
+

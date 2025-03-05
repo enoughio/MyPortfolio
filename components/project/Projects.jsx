@@ -47,7 +47,7 @@ const Projects = () => {
              opacity: 1,
              transition: {
                duration: 0.8,
-               delay: 1,
+               delay: 3,
              },
            }}
            viewport={{
@@ -64,8 +64,9 @@ const Projects = () => {
                 y: 0,
                 opacity: 1,
                 transition: {
-                  duration: 0.5,
-                  delay: 0.5,
+                  duration: 0.4,
+                  delay: .8,
+                  staggerChildren: 0.2,
                 },
               }}
               viewport={{

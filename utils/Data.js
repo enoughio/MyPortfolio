@@ -61,3 +61,27 @@ export const navItems = [
 //   { date: "May 2024", title: "Launch", description: "Official project launch." },
 // ];
 
+
+
+
+export const BlogMessages = [
+    "Hello",
+    "Welcome", 
+    "to", 
+    "My", 
+    "Blog", 
+    "👋"
+  ]
+
+
+ export const welcomeMessages = [
+    "Hello", 
+    "Kon'nichiwa", 
+    "Welcome", 
+    "नमस्ते", 
+    "Bonjour", 
+    "Hola", 
+    "Ciao", 
+    "Γεια σας", 
+    "Merhaba"
+  ]

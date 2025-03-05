@@ -1,9 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { navItems } from "@/utils/Data";
+import { navItems, welcomeMessages } from "@/utils/Data";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { Analytics } from "@vercel/analytics/react"
-import { ReactLenis } from "@/lib/lenis"
+import { SplashScreen } from "@/components/ui/SplashScreen";
 
 
 const geistSans = Geist({
@@ -24,12 +24,14 @@ export const metadata = {
 
 
 export default function RootLayout({ children }) {
+  
   return (
     <html lang="en" >
         <body
           className={`${geistSans.variable} ${geistMono.variable} scroll-smooth antialiased dark  flex flex-col items-start bg-background w-full px-2 sm:px-8 lg:px-[16%]`}
         >
           <FloatingNav navItems={navItems} />
+          <SplashScreen messages={welcomeMessages} duration={1800} />
           <Analytics />
       {/* <ReactLenis > */}
           {children}
