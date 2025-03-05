@@ -94,7 +94,7 @@ const Hero = () => {
                   className="w-fit h-fit bg-gray-200 text-black"
                   asChild
                 >
-                  <Link href="/blog">Blog</Link>
+                  <Link href="/blogs">Blog</Link>
                 </Button>
               </motion.div>
 
