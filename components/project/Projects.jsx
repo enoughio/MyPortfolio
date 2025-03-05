@@ -58,7 +58,7 @@ const Projects = () => {
       transition: {
         duration: 0.4,
         delay: isMobile 
-          ? (index === 0 ? 2.5 :  0+ (index * 0.2)) // First card appears slower
+          ? (index === 0 ? 2.9 : 0 + (index * 0.2)) // First card appears slower
           :  0.2 ,  // Original desktop staggering
         staggerChildren: 0.2,
       },
