@@ -24,7 +24,7 @@ const techColors = {
 
 const Projects = () => {
   // Use media query to detect mobile view
-  const isMobile = useMediaQuery({ maxWidth: 767 });
+  const isMobile = useMediaQuery({ maxWidth: 700 });
 
   // Adjust animation variants based on screen size
   const containerVariants = {
@@ -58,7 +58,7 @@ const Projects = () => {
       transition: {
         duration: 0.4,
         delay: isMobile 
-          ? (index === 0 || index === 1 ? 2.5 :  0+ (index * 0.2)) // First card appears slower
+          ? (index === 0 ? 3.5 : 0 + (index * 0.2)) // First card appears slower
           :  0.2 ,  // Original desktop staggering
         staggerChildren: 0.2,
       },
