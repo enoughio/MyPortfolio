@@ -34,12 +34,12 @@ export const ProjectsData = [
 
 
 
-  // {
-  //     title: 'Todo App',
-  //     description: 'A productivity app built with React  and postgreSQL',
-  //     tech: ["React", "Node"],
-  //     link: 'https://github.com/enoughio/todo',
-  // },
+  {
+      title: 'Todo App',
+      description: 'A productivity app built with React  and postgreSQL',
+      tech: ["React", "Node"],
+      link: 'https://github.com/enoughio/todo',
+  },
 
 ];
 

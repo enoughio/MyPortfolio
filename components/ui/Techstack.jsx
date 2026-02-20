@@ -20,7 +20,7 @@ export default function TechStack() {
       }}
       viewport={{
         once: true,
-        // amount: 0.2,
+        amount: 0.16,
       }}
     >
 
