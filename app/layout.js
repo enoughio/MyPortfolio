@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
       </head>
 
       <body
-        className={`${geistSans.variable} ${geistMono.variable} scroll-smooth antialiased dark  flex flex-col items-start bg-background w-full px-2 sm:px-8 lg:px-[16%]`}
+        className={`${geistSans.variable} ${geistMono.variable} scroll-smooth antialiased dark  flex flex-col items-center justify-center bg-background w-full px-2 sm:px-8 lg:px-[16%]`}
       >
         <FloatingNav navItems={navItems} />
         <SplashScreen messages={welcomeMessages} duration={1800} />

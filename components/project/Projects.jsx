@@ -6,7 +6,7 @@ import { RxExternalLink } from "react-icons/rx";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card.jsx";
 import { ProjectsData } from "@/utils/Data";
-import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from "react-responsive"; /// for getting the idea about current screen size
 
 const techColors = {
   React: "bg-blue-500",
@@ -31,10 +31,10 @@ const Projects = () => {
     initial: { opacity: 0 },
     animate: {
       opacity: 1,
-      transition: {
-        duration: 0.5,
-        delay: isMobile ? 2 : 0.6,
-      },
+    },
+    transition: {
+      duration: 0.5,
+      delay: isMobile ? 2 : 0.6,
     },
   };
 
@@ -57,9 +57,11 @@ const Projects = () => {
       y: 0,
       transition: {
         duration: 0.4,
-        delay: isMobile 
-          ? (index === 0 ? 3.5 : 0 + (index * 0.2)) // First card appears slower
-          :  0.2 ,  // Original desktop staggering
+        delay: isMobile
+          ? index === 0
+            ? 3.5
+            : 0 + index * 0.2 // First card appears slower
+          : 0.2, // Original desktop staggering
         staggerChildren: 0.2,
       },
     }),
@@ -76,7 +78,7 @@ const Projects = () => {
       }}
     >
       <div className="mt-10 mx-2">
-        <motion.h2 
+        <motion.h2
           className="text-4xl font-bold mb-4"
           initial="initial"
           whileInView="animate"
@@ -125,7 +127,7 @@ const Projects = () => {
                             <div
                               className={cn(
                                 "size-4 rounded-full w-3 h-3",
-                                techColors[t] || "bg-gray-400"
+                                techColors[t] || "bg-gray-400",
                               )}
                             />
                             <span className="text-xs font-medium text-foreground">

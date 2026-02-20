@@ -24,7 +24,7 @@ export function SplashScreen({messages, duration}) {
     // Change message every 180ms
     const messageInterval = setTimeout(() => {
       setCurrentMessageIndex(prev => prev + 1)
-    }, 180)
+    }, 250)
 
     return () => clearTimeout(messageInterval)
   }, [currentMessageIndex, messages.length, duration])

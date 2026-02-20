@@ -93,7 +93,7 @@ export default function Experience() {
       viewport={{ once: false, amount: 0.2 }}
       variants={containerVariants}
     >
-      <h1 className="text-4xl font-bold mb-12 text-start">My Experience</h1>
+      <h1 className="text-4xl font-bold mb-12 text-start">My Contributions </h1>
       <div className="ml-5 relative border-l border-white-400">
         {experienceData.map((experience, index) => (
         

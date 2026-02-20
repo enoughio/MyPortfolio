@@ -1,12 +1,12 @@
 export const ProjectsData = [
 
 
-  {
-    title: 'Physics-Calculator',
-    description: 'An AI powered calculator for solving Physics and maths related problems',
-    tech: ['Django', 'TypeScript'],
-    link: 'https://github.com/enoughio/Physics-Calculator',
-  },
+  // {
+  //   title: 'Physics-Calculator',
+  //   description: 'An AI powered calculator for solving Physics and maths related problems',
+  //   tech: ['Django', 'TypeScript'],
+  //   link: 'https://github.com/enoughio/Physics-Calculator',
+  // },
   {
     title: 'Binary tree visulizer',
     description: 'Binary Tree Visualizer an web-based tool helps visualize binary tree structures dynamically',
@@ -19,18 +19,18 @@ export const ProjectsData = [
     tech: ['NEXTJS'],
     link: 'https://github.com/enoughio/MyPortfolio',
   },
-  {
-    title: 'Chat Application',
-    description: 'A real-time chat application with WebSocket support, built with React and Node.js',
-    tech: ['React'],
-    link: 'https://github.com/enoughio/ChatterBox-chating_app-',
-  },
-  {
-    title: 'E-commerce Platform',
-    description: 'A full-stack e-commerce solution with React, Node.js, and MongoDB',
-    tech: ['React'],
-    link: 'https://github.com/enoughio/e-com-store',
-  },
+  // {
+  //   title: 'Chat Application',
+  //   description: 'A real-time chat application with WebSocket support, built with React and Node.js',
+  //   tech: ['React'],
+  //   link: 'https://github.com/enoughio/ChatterBox-chating_app-',
+  // },
+  // {
+  //   title: 'E-commerce Platform',
+  //   description: 'A full-stack e-commerce solution with React, Node.js, and MongoDB',
+  //   tech: ['React'],
+  //   link: 'https://github.com/enoughio/e-com-store',
+  // },
 
 
 
@@ -76,12 +76,12 @@ export const BlogMessages = [
 
  export const welcomeMessages = [
     "Hello", 
-    "Kon'nichiwa", 
-    "Welcome", 
     "नमस्ते", 
+    "Kon'nichiwa", 
     "Bonjour", 
     "Hola", 
+    "Welcome", 
     "Ciao", 
-    "Γεια σας", 
-    "Merhaba"
+    // "Γεια σας", 
+    // "Merhaba"
   ]

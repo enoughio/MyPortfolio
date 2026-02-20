@@ -9,7 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <div style={{ scrollBehavior: "smooth" }} className="antialiased flex flex-col items-start bg-background w-full px-2 sm:px-8  mt-10">
-      <SplashScreen messages={BlogMessages} duration={1000} />
+      <SplashScreen messages={BlogMessages} duration={2500} />
       <div className="w-full">
         {children}
       </div>
